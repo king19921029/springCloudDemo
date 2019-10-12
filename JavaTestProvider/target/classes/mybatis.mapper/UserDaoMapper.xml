@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.yuanqi.dao.IUserMapper" >
+
+    <!-- 通过条件查询用户列表信息 -->
+    <select id="queryUserList" resultType="HashMap">
+        select id as user_id,real_name,if(sex ='0','男','女') as sex
+        ,nickname,birthday,phone,header_pic_url,weixin
+        ,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time,user_no
+        from user_info
+        <where>
+            <if test="userRealName != null">
+                and real_name like CONCAT('%',#{userRealName},'%')
+            </if>
+            <if test="nickname != null">
+                and nickname like CONCAT('%',#{nickname},'%')
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+            <if test="phone != null">
+                and phone = #{phone}
+            </if>
+        </where>
+        order by create_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 通过条件查询用户列表总数信息 -->
+    <select id="queryUserCount" resultType="Integer">
+        SELECT count(1) FROM user_info
+        <where>
+            <if test="userRealName != null">
+                and real_name like CONCAT('%',#{userRealName},'%')
+            </if>
+            <if test="nickname != null">
+                and nickname like CONCAT('%',#{nickname},'%')
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+            <if test="phone != null">
+                and phone = #{phone}
+            </if>
+        </where>
+    </select>
+
+    <!-- 通过ID查询用户详情信息 -->
+    <select id="getUserInfoById" resultType="HashMap">
+        select id as user_id,real_name,if(sex ='0','男','女') as sex
+        ,nickname,birthday,phone,header_pic_url,weixin
+        ,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time,user_no,memo
+        from user_info
+        where id = #{userId}
+    </select>
+
+    <!-- 新增用户信息 -->
+    <insert id="insertUser">
+        INSERT INTO user_info (`id`, `real_name`, `sex`, `nickname`, `birthday`, `phone`, `header_pic_url`, `weixin`, `user_no`, `memo`, `create_time`)
+        VALUES ((select uuid()), #{userRealName},#{sex},#{nickname},#{birthday},#{phone},#{headerPicUrl},#{weixin},#{userNo},#{memo},now())
+    </insert>
+
+    <!-- 修改用户信息 -->
+    <update id="updateUser">
+        update user_info set update_time = now()
+        <if test="userRealName != null">,real_name = #{userRealName}</if>
+        <if test="sex != null">,sex = #{sex}</if>
+        <if test="nickname != null">,nickname = #{nickname}</if>
+        <if test="birthday != null">,birthday = #{birthday}</if>
+        <if test="birthday == null">,birthday = NULL </if>
+        <if test="phone != null">,phone = #{phone}</if>
+        <if test="headerPicUrl != null">,header_pic_url = #{headerPicUrl}</if>
+        <if test="weixin != null">,weixin = #{weixin}</if>
+        <if test="memo != null">,memo = #{memo}</if>
+        where id = #{userId}
+    </update>
+
+    <!-- 删除用户信息 -->
+    <delete id="delUser">
+        delete from user_info where id = #{userId}
+    </delete>
+
+    <!-- 通过条件查询小区列表信息 -->
+    <select id="queryHouseDistrictList" resultType="HashMap">
+        SELECT hd.id as house_district_id,hd.name as house_district_name,hd.build_time,province,city,county
+        ,if(hd.is_door_guard is null,'未设置',(if(hd.is_door_guard ='0','没有','有'))) as is_door_guard,concat(province.label,city.label,county.label,hd.address) as address
+        ,date_format(hd.create_time,'%Y-%m-%d %H:%i:%s') as create_time
+        FROM house_district as hd
+        left join province as province on province.code = hd.province
+        left join city as city on city.code = hd.city
+        left join county as county on county.code = hd.county
+        <where>
+            <if test="houseDistrictName != null">
+                and hd.name like CONCAT('%',#{houseDistrictName},'%')
+            </if>
+            <if test="address != null">
+                and hd.address like CONCAT('%',#{address},'%')
+            </if>
+        </where>
+        order by hd.create_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 通过条件查询小区列表总数信息 -->
+    <select id="queryHouseDistrictCount" resultType="Integer">
+        SELECT count(1) FROM house_district
+        <where>
+            <if test="houseDistrictName != null">
+                and name like CONCAT('%',#{houseDistrictName},'%')
+            </if>
+            <if test="address != null">
+                and address like CONCAT('%',#{address},'%')
+            </if>
+            <if test="checkHouseDistrictName != null">
+                and name = #{checkHouseDistrictName}
+            </if>
+        </where>
+    </select>
+
+    <!-- 通过ID查询小区详情信息 -->
+    <select id="getHouseDistrictInfoById" resultType="HashMap">
+        SELECT id as house_district_id,name as house_district_name,build_time,province,city,county
+        ,if(is_door_guard is null,'未设置',(if(is_door_guard ='0','没有','有'))) as is_door_guard,address
+        ,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time,info
+        FROM house_district
+        where id = #{houseDistrictId}
+    </select>
+
+    <!-- 通过ID查询小区图片列表信息 -->
+    <select id="getHouseDistrictPicListById" resultType="HashMap">
+        SELECT * FROM house_district_pic
+        where house_district_id = #{houseDistrictId}
+        order by num
+    </select>
+
+    <!-- 新增小区信息 -->
+    <insert id="insertHouseDistrict">
+        INSERT INTO house_district (`id`, `name`, `province`, `city`, `county`, `address`, `build_time`, `is_door_guard`, `info`, `create_time`)
+        VALUES (#{houseDistrictId}, #{houseDistrictName},#{province},#{city},#{county},#{address},#{buildTime},#{isDoorGuard},#{info},now())
+    </insert>
+
+    <!-- 新增小区与图片关联关系 -->
+    <insert id="insertHouseDistrictPicList">
+        INSERT INTO house_district_pic (`id`, `house_district_id`, `pic_url`, `num`, `create_time`)
+        <foreach item="item" index="index" collection="picList" open="VALUES " separator="," close=";">
+            ((select uuid()), #{houseDistrictId},#{item},#{index},now())
+        </foreach>
+    </insert>
+
+    <!-- 修改小区信息 -->
+    <update id="updateHouseDistrict">
+        update house_district set update_time = now()
+        <if test="houseDistrictName != null">,name = #{houseDistrictName}</if>
+        <if test="province != null">,province = #{province}</if>
+        <if test="city != null">,city = #{city}</if>
+        <if test="county != null">,county = #{county}</if>
+        <if test="address != null">,address = #{address}</if>
+        <if test="buildTime != null">,build_time = #{buildTime}</if>
+        <if test="isDoorGuard != null">,is_door_guard = #{isDoorGuard}</if>
+        <if test="info != null">,info = #{info}</if>
+        <if test="userCount != null">,user_count = #{userCount}</if>
+        where id = #{houseDistrictId}
+    </update>
+
+    <!-- 删除小区信息 -->
+    <delete id="delHouseDistrict">
+        delete from house_district where id = #{houseDistrictId}
+    </delete>
+
+    <!-- 删除小区图片关联信息 -->
+    <delete id="delHouseDistrictPicList">
+        delete from house_district_pic where house_district_id = #{houseDistrictId}
+    </delete>
+
+    <!-- 清空所有对应的房屋关联信息 -->
+    <update id="updateHouseDistrictRelationHouse">
+        update house set house_district_id = null
+        where house_district_id = #{houseDistrictId}
+    </update>
+
+    <!-- 通过条件查询房屋列表信息 -->
+    <select id="queryHouseList" resultType="HashMap">
+        SELECT h.id as house_id,h.house_district_id,h.address
+        ,h.min_area,h.max_area,h.type0,h.type1,h.type2,h.type3
+        ,h.floor,h.aspect,hd.name as house_district_name
+        ,if(h.elevator is null,'未设置',(if(h.elevator ='0','没有','有'))) as elevator
+        FROM house as h
+        left join house_district as hd on hd.id = h.house_district_id
+        <where>
+            <if test="houseDistrictId != null">
+                and h.house_district_id = #{houseDistrictId}
+            </if>
+            <if test="address != null">
+                and h.address like CONCAT('%',#{address},'%')
+            </if>
+        </where>
+        order by h.create_time
+        limit ${skip},${size}
+    </select>
+
+    <!-- 通过条件查询房屋列表总数信息 -->
+    <select id="queryHouseCount" resultType="Integer">
+        SELECT count(1) FROM house as h
+        left join house_district as hd on hd.id = h.house_district_id
+        <where>
+            <if test="houseDistrictId != null">
+                and h.house_district_id = #{houseDistrictId}
+            </if>
+            <if test="address != null">
+                and h.address like CONCAT('%',#{address},'%')
+            </if>
+        </where>
+    </select>
+
+    <!-- 检查是否有一样的房屋及小区名称 -->
+    <select id="checkHouseAddress" resultType="Integer">
+        select count(1) from (
+        SELECT concat(hd.name,h.address) as fullName FROM house as h
+        left join house_district as hd on hd.id = h.house_district_id) as t1
+        where fullName = #{checkAddress}
+    </select>
+
+
+    <!-- 通过ID查询房屋详情信息 -->
+    <select id="getHouseInfoById" resultType="HashMap">
+        SELECT h.id as house_id,h.house_district_id,h.address
+        ,h.min_area,h.max_area,h.type0,h.type1,h.type2,h.type3
+        ,h.floor,h.aspect,hd.name as house_district_name
+        ,if(h.elevator is null,'未设置',(if(h.elevator ='0','没有','有'))) as elevator,h.info
+        FROM house as h
+        left join house_district as hd on hd.id = h.house_district_id
+        where h.id = #{houseId}
+    </select>
+
+    <!-- 通过ID查询房屋图片列表信息 -->
+    <select id="getHousePicListById" resultType="HashMap">
+        SELECT * FROM house_pic
+        where house_id = #{houseId}
+        order by num
+    </select>
+
+    <!-- 新增房屋信息 -->
+    <insert id="insertHouse">
+        INSERT INTO house (`id`, `house_district_id`, `min_area`, `max_area`, `address`, `type0`, `type1`, `type2`, `type3`, `info`, `floor`, `elevator`, `aspect`, `create_time`)
+        VALUES (#{houseId}, #{houseDistrictId},#{minArea},#{maxArea},#{address},#{type0},#{type1},#{type2},#{type3},#{info},#{floor},#{elevator},#{aspect},now())
+    </insert>
+
+    <!-- 新增房屋与图片关联关系 -->
+    <insert id="insertHousePicList">
+        INSERT INTO house_pic (`id`, `house_id`, `pic_url`, `num`, `create_time`)
+        <foreach item="item" index="index" collection="picList" open="VALUES " separator="," close=";">
+            ((select uuid()), #{houseId},#{item},#{index},now())
+        </foreach>
+    </insert>
+
+    <!-- 修改房屋信息 -->
+    <update id="updateHouse">
+        update house set update_time = now()
+        <if test="houseDistrictId != null">,house_district_id = #{houseDistrictId}</if>
+        <if test="minArea != null">,min_area = #{minArea}</if>
+        <if test="maxArea != null">,max_area = #{maxArea}</if>
+        <if test="address != null">,address = #{address}</if>
+        <if test="type0 != null">,type0 = #{type0}</if>
+        <if test="type1 != null">,type1 = #{type1}</if>
+        <if test="type2 != null">,type2 = #{type2}</if>
+        <if test="type3 != null">,type3 = #{type3}</if>
+        <if test="info != null">,info = #{info}</if>
+        <if test="floor != null">,floor = #{floor}</if>
+        <if test="elevator != null">,elevator = #{elevator}</if>
+        <if test="aspect != null">,aspect = #{aspect}</if>
+        where id = #{houseId}
+    </update>
+
+    <!-- 删除房屋信息 -->
+    <delete id="delHouse">
+        delete from house where id = #{houseId}
+    </delete>
+
+    <!-- 删除房屋图片关联信息 -->
+    <delete id="delHousePicList">
+        delete from house_pic where house_id = #{houseId}
+    </delete>
+
+    <!-- 查询用户与房屋关联列表信息 -->
+    <select id="queryUserHouseRelationList" resultType="HashMap">
+        SELECT uh.id as user_house_relation_id,h.id as house_id,h.house_district_id,h.area,h.address
+        ,CASE h.type
+        WHEN 0 THEN '开间'
+        WHEN 1 THEN '一室一厅一卫'
+        WHEN 2 THEN '两室一厅一卫'
+        WHEN 3 THEN '三室一厅一卫'
+        WHEN 4 THEN '两室一厅两卫'
+        WHEN 5 THEN '三室一厅两卫'
+        WHEN 6 THEN '四室'
+        WHEN 7 THEN '五室'
+        END AS type
+        ,h.floor,h.aspect,hd.name as house_district_name
+        ,if(h.elevator is null,'未设置',(if(h.elevator ='0','没有','有'))) as elevator
+        FROM user_house as uh
+        left join house as h on h.id = uh.house_id
+        left join house_district as hd on hd.id = h.house_district_id
+        where uh.user_id = #{userId}
+        <if test="houseDistrictId != null">
+            and h.house_district_id = #{houseDistrictId}
+        </if>
+        <if test="address != null">
+            and h.address like CONCAT('%',#{address},'%')
+        </if>
+        <if test="type != null">
+            and h.type = #{type}
+        </if>
+        order by uh.create_time
+        limit ${skip},${size}
+    </select>
+
+    <!-- 查询用户与房屋关联列表总数量 -->
+    <select id="queryUserHouseRelationCount" resultType="Integer">
+        SELECT count(1) FROM user_house as uh
+        left join house as h on h.id = uh.house_id
+        left join house_district as hd on hd.id = h.house_district_id
+        where uh.user_id = #{userId}
+        <if test="houseDistrictId != null">
+            and h.house_district_id = #{houseDistrictId}
+        </if>
+        <if test="address != null">
+            and h.address like CONCAT('%',#{address},'%')
+        </if>
+        <if test="type != null">
+            and h.type = #{type}
+        </if>
+    </select>
+
+    <!-- 获取用户与房屋关联详情信息 -->
+    <select id="getUserHouseRelationInfoById" resultType="HashMap">
+        SELECT h.id as house_id,h.house_district_id,h.area,h.address
+        ,CASE h.type
+        WHEN 0 THEN '开间'
+        WHEN 1 THEN '一室一厅一卫'
+        WHEN 2 THEN '两室一厅一卫'
+        WHEN 3 THEN '三室一厅一卫'
+        WHEN 4 THEN '两室一厅两卫'
+        WHEN 5 THEN '三室一厅两卫'
+        WHEN 6 THEN '四室'
+        WHEN 7 THEN '五室'
+        END AS house_type
+        ,h.floor,h.aspect,hd.name as house_district_name
+        ,if(h.elevator is null,'未设置',(if(h.elevator ='0','有','无'))) as elevator
+        ,uh.enter_time,if(uh.type = '0','租房','自住') as user_house_type
+        FROM user_house as uh
+        left join house as h on h.id = uh.house_id
+        left join house_district as hd on hd.id = h.house_district_id
+        where uh.id = #{userHouseRelationId}
+    </select>
+
+    <!-- 新增用户与房屋关联信息 -->
+    <insert id="insertUserHouseRelation">
+        INSERT INTO user_house (`id`, `house_id`, `user_id`, `enter_time`, `type`, `create_time`)
+        VALUES (#{userHouseRelationId}, #{houseId},#{userId},#{enterTime},#{type},now())
+    </insert>
+
+    <!-- 修改用户与房屋关联信息 -->
+    <update id="updateUserHouseRelation">
+        update user_house set update_time = now()
+        <if test="enterTime != null">,enter_time = #{enterTime}</if>
+        <if test="type != null">,type = #{type}</if>
+        where id = #{userHouseRelationId}
+    </update>
+
+    <!-- 删除用户与房屋关联信息 -->
+    <delete id="delUserHouseRelation">
+        delete from user_house where id = #{userHouseRelationId}
+    </delete>
+
+    <!-- 查询用户生活记录列表信息 -->
+    <select id="queryUserLifeHistoryList" resultType="HashMap">
+        SELECT au.nick_name,ulh.family_info,ulh.pet_info
+        ,date_format(ulh.record_time,'%Y-%m-%d %H:%i:%s') as record_time
+        ,ulh.id as user_life_history_id FROM user_life_history as ulh
+        left join admin_user as au on au.id = ulh.record_admin_user_id
+        where ulh.user_id = #{userId}
+        <if test="beginTime != null">
+            <![CDATA[
+            and ulh.record_time >= #{beginTime} and ulh.record_time < #{endTime}
+            ]]>
+        </if>
+        <if test="recordAdminUserId != null">
+            and ulh.record_admin_user_id = #{recordAdminUserId}
+        </if>
+        order by ulh.record_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 查询用户生活记录列表总数量 -->
+    <select id="queryUserLifeHistoryCount" resultType="Integer">
+        SELECT count(1) FROM user_life_history as ulh
+        left join admin_user as au on au.id = ulh.record_admin_user_id
+        where ulh.user_id = #{userId}
+        <if test="beginTime != null">
+            <![CDATA[
+            and ulh.record_time >= #{beginTime} and ulh.record_time < #{endTime}
+            ]]>
+        </if>
+        <if test="recordAdminUserId != null">
+            and ulh.record_admin_user_id = #{recordAdminUserId}
+        </if>
+    </select>
+
+    <!-- 获取用户生活记录基本信息 -->
+    <select id="getUserLifeHistoryInfoById" resultType="HashMap">
+        SELECT au.nick_name,ulh.family_info,ulh.pet_info
+        ,date_format(ulh.record_time,'%Y-%m-%d %H:%i:%s') as record_time
+        ,ulh.id as user_life_history_id FROM user_life_history as ulh
+        left join admin_user as au on au.id = ulh.record_admin_user_id
+        where ulh.id = #{userLifeHistoryId}
+    </select>
+
+    <!-- 获取用户生活记录详情信息列表 -->
+    <select id="getUserLifeHistoryDetailListById" resultType="HashMap">
+        SELECT * FROM user_life_history_detail where user_life_history_id = #{userLifeHistoryId} order by num
+    </select>
+
+    <!-- 新增用户生活记录基本信息 -->
+    <insert id="insertUserLifeHistory">
+        INSERT INTO user_life_history (`id`, `record_admin_user_id`, `record_time`, `user_id`, `family_info`, `pet_info`, `create_time`)
+        VALUES (#{userLifeHistoryId}, #{recordAdminUserId},#{recordTime},#{userId},#{familyInfo},#{petInfo},now())
+    </insert>
+
+    <!-- 新增小区与图片关联关系 -->
+    <insert id="insertUserLifeHistoryDetail">
+        INSERT INTO user_life_history_detail (`id`, `user_life_history_id`, `life_property_key`, `life_property_value`, `num`, `create_time`)
+        <foreach item="item" index="index" collection="detailList" open="VALUES " separator="," close=";">
+            ((select uuid()), #{userLifeHistoryId},url_decode(#{item.pKey}),url_decode(#{item.pValue}),#{index},now())
+        </foreach>
+    </insert>
+
+    <!-- 修改用户生活记录基本信息 -->
+    <update id="updateUserLifeHistory">
+        update user_life_history set update_time = now()
+        <if test="recordAdminUserId != null">,record_admin_user_id = #{recordAdminUserId}</if>
+        <if test="recordTime != null">,record_time = #{recordTime}</if>
+        <if test="familyInfo != null">,family_info = #{familyInfo}</if>
+        <if test="petInfo != null">,pet_info = #{petInfo}</if>
+        where id = #{userLifeHistoryId}
+    </update>
+
+    <!-- 删除用户生活记录基本信息 -->
+    <delete id="delUserLifeHistory">
+        delete from user_life_history where id = #{userLifeHistoryId}
+    </delete>
+
+    <!-- 删除用户生活记录详情列表信息 -->
+    <delete id="delUserLifeHistoryDetailList">
+        delete from user_life_history_detail where user_life_history_id = #{userLifeHistoryId}
+    </delete>
+
+    <!-- 查询用户房屋记录列表信息 -->
+    <select id="queryUserHouseHistoryList" resultType="HashMap">
+        SELECT au.nick_name
+        ,date_format(ulh.record_time,'%Y-%m-%d %H:%i:%s') as record_time
+        ,ulh.id as user_house_history_id FROM user_house_history as ulh
+        left join admin_user as au on au.id = ulh.record_admin_user_id
+        where ulh.user_id = #{userId} and ulh.house_id = #{houseId}
+        <if test="beginTime != null">
+            <![CDATA[
+            and ulh.record_time >= #{beginTime} and ulh.record_time < #{endTime}
+            ]]>
+        </if>
+        <if test="recordAdminUserId != null">
+            and ulh.record_admin_user_id = #{recordAdminUserId}
+        </if>
+        order by ulh.record_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 查询用户房屋记录列表总数量 -->
+    <select id="queryUserHouseHistoryCount" resultType="Integer">
+        SELECT count(1) FROM user_house_history as ulh
+        left join admin_user as au on au.id = ulh.record_admin_user_id
+        where ulh.user_id = #{userId} and ulh.house_id = #{houseId}
+        <if test="beginTime != null">
+            <![CDATA[
+            and ulh.record_time >= #{beginTime} and ulh.record_time < #{endTime}
+            ]]>
+        </if>
+        <if test="recordAdminUserId != null">
+            and ulh.record_admin_user_id = #{recordAdminUserId}
+        </if>
+    </select>
+
+    <!-- 获取用户房屋记录基本信息 -->
+    <select id="getUserHouseHistoryInfoById" resultType="HashMap">
+        SELECT au.nick_name
+        ,date_format(ulh.record_time,'%Y-%m-%d %H:%i:%s') as record_time
+        ,ulh.id as user_house_history_id FROM user_house_history as ulh
+        left join admin_user as au on au.id = ulh.record_admin_user_id
+        where ulh.id = #{userHouseHistoryId}
+    </select>
+
+    <!-- 获取用户房屋记录详情信息列表 -->
+    <select id="getUserHouseHistoryDetailListById" resultType="HashMap">
+        SELECT * FROM user_house_history_detail where user_house_history_id = #{userHouseHistoryId} order by num
+    </select>
+
+    <!-- 新增用户房屋记录基本信息 -->
+    <insert id="insertUserHouseHistory">
+        INSERT INTO user_house_history (`id`, `record_admin_user_id`, `record_time`, `user_id`, `house_id`, `create_time`)
+        VALUES (#{userHouseHistoryId}, #{recordAdminUserId},#{recordTime},#{userId},#{houseId},now())
+    </insert>
+
+    <!-- 新增用户房屋记录详情列表 -->
+    <insert id="insertUserHouseHistoryDetail">
+        INSERT INTO user_house_history_detail (`id`, `user_house_history_id`, `house_property_key`, `house_property_value`, `num`, `create_time`)
+        <foreach item="item" index="index" collection="detailList" open="VALUES " separator="," close=";">
+            ((select uuid()), #{userHouseHistoryId},url_decode(#{item.pKey}),url_decode(#{item.pValue}),#{index},now())
+        </foreach>
+    </insert>
+
+    <!-- 修改用户房屋记录基本信息 -->
+    <update id="updateUserHouseHistory">
+        update user_house_history set update_time = now()
+        <if test="recordAdminUserId != null">,record_admin_user_id = #{recordAdminUserId}</if>
+        <if test="recordTime != null">,record_time = #{recordTime}</if>
+        where id = #{userHouseHistoryId}
+    </update>
+
+    <!-- 删除用户房屋记录基本信息 -->
+    <delete id="delUserHouseHistory">
+        delete from user_house_history where id = #{userHouseHistoryId}
+    </delete>
+
+    <!-- 删除用户房屋记录详情列表信息 -->
+    <delete id="delUserHouseHistoryDetailList">
+        delete from user_house_history_detail where user_house_history_id = #{userHouseHistoryId}
+    </delete>
+
+    <!-- 获取小区所包含的用户数量 -->
+    <select id="queryHouseDistrictUserCount" resultType="HashMap">
+        select count(uh.id) as userCount,hd.id as houseDistrictId from user_house as uh
+        left join house as h on h.id = uh.house_id
+        left join house_district as hd on hd.id = h.house_district_id
+        where hd.id is not null
+        group by hd.id
+    </select>
+
+
+</mapper>

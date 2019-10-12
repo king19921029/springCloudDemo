@@ -1,0 +1,36 @@
+2019-10-12 13:40:33,730 INFO DEFAULT_GROUP@@yuanqi-service-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.104:18082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-12 13:40:33,733 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@yuanqi-service-consumer, ips: 192.168.1.104:18082_true,
+
+2019-10-12 13:40:49,603 INFO DEFAULT_GROUP@@yuanqi-service-provider {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.104:18081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-12 13:40:49,603 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@yuanqi-service-provider, ips: 192.168.1.104:18081_true,
+
+2019-10-12 13:50:09,002 INFO {POS} {IP-DISABLED} valid: 192.168.1.104:18082@DEFAULT@DEFAULT_GROUP@@yuanqi-service-consumer, region: unknown, msg: client timeout after 15000, last beat: 1570859317682
+
+2019-10-12 13:50:09,006 INFO service: DEFAULT_GROUP@@yuanqi-service-consumer {POS} {IP-ENABLED} valid: 192.168.1.104:18082@DEFAULT, region: unknown, msg: client beat ok
+
+2019-10-12 13:50:09,272 INFO DEFAULT_GROUP@@yuanqi-service-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.1.104:18082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-12 13:50:09,272 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@yuanqi-service-consumer, ips: 
+
+2019-10-12 13:50:14,283 INFO DEFAULT_GROUP@@yuanqi-service-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.104:18082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-12 13:50:14,283 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@yuanqi-service-consumer, ips: 192.168.1.104:18082_true,
+
+2019-10-12 13:56:22,347 INFO DEFAULT_GROUP@@yuanqi-service-consumer {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.1.104:18082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-12 13:56:22,347 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@yuanqi-service-consumer, ips: 
+
+2019-10-12 13:56:24,193 INFO DEFAULT_GROUP@@yuanqi-service-provider {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.1.104:18081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-12 13:56:24,193 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@yuanqi-service-provider, ips: 
+
+2019-10-12 13:56:26,910 INFO DEFAULT_GROUP@@yuanqi-service-consumer {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.104:18082:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-12 13:56:26,910 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@yuanqi-service-consumer, ips: 192.168.1.104:18082_true,
+
+2019-10-12 13:56:33,072 INFO DEFAULT_GROUP@@yuanqi-service-provider {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.104:18081:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-12 13:56:33,072 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@yuanqi-service-provider, ips: 192.168.1.104:18081_true,
+

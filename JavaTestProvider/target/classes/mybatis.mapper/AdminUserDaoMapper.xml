@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.yuanqi.dao.IAdminUserMapper" >
+
+    <!-- 通过账号及密码获取用户信息 -->
+    <select id="getAdminUserInfoByUsernameAndPassword" resultType="HashMap">
+        SELECT * from admin_user where username = #{username} and password = #{password} and status = 0;
+    </select>
+
+    <!-- 通过用户ID获取用户权限列表信息 -->
+    <select id="getUserRoleList" resultType="HashMap">
+        select ar.id as roleId,ro.*,rmo.title,rmo.icon from admin_user_group_relation as ugr
+        left join admin_group_role_relation as grr on grr.admin_group_id = ugr.admin_group_id
+        left join admin_role as ar on ar.id = grr.admin_role_id
+        left join admin_role_object as ro on ro.id = ar.path
+        left join admin_role_meta_object as rmo on rmo.id = ro.meta
+        where ugr.admin_user_id = #{adminUserId}
+        and ar.level = #{level}
+        <if test="roleId != null">
+            and ar.pid = #{roleId}
+        </if>
+        order by ar.num
+
+    </select>
+
+    <!-- 通过条件查询系统账户列表信息 -->
+    <select id="queryAdminUserList" resultType="HashMap">
+        select au.id as admin_user_id,au.nick_name,if(au.status ='0','正常','冻结') as status,au.phone,au.job,ag.name as admin_group_name
+        from admin_user as au
+        left join admin_user_group_relation as augr on augr.admin_user_id = au.id
+        left join admin_group as ag on ag.id  = augr.admin_group_id
+        <where>
+            <if test="nickname != null">
+                and au.nick_name like CONCAT('%',#{nickname},'%')
+            </if>
+            <if test="phone != null">
+                and au.phone like CONCAT('%',#{phone},'%')
+            </if>
+            <if test="job != null">
+                and au.job like CONCAT('%',#{job},'%')
+            </if>
+            <if test="status != null">
+                and au.status = #{status}
+            </if>
+            <if test="adminGroupId != null">
+                and ag.id = #{adminGroupId}
+            </if>
+            <if test="notAdminGroupId != null">
+                and ag.id != #{adminGroupId}
+            </if>
+            <if test="nullAdminGroupId != null">
+                and ag.id is null
+            </if>
+        </where>
+        order by au.create_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 通过条件查询系统账户总数量信息 -->
+    <select id="queryAdminUserCount" resultType="Integer">
+        select count(1) from admin_user as au
+        left join admin_user_group_relation as augr on augr.admin_user_id = au.id
+        left join admin_group as ag on ag.id  = augr.admin_group_id
+        <where>
+            <if test="nickname != null">
+                and au.nick_name like CONCAT('%',#{nickname},'%')
+            </if>
+            <if test="phone != null">
+                and au.phone like CONCAT('%',#{phone},'%')
+            </if>
+            <if test="job != null">
+                and au.job like CONCAT('%',#{job},'%')
+            </if>
+            <if test="status != null">
+                and au.status = #{status}
+            </if>
+            <if test="adminGroupId != null">
+                and ag.id = #{adminGroupId}
+            </if>
+        </where>
+    </select>
+
+    <!-- 插入系统用户操作记录信息 -->
+    <insert id="insertAdminUserActionLog">
+        INSERT INTO admin_user_log (`id`, `action`, `params`, `create_time`, `admin_user_id`)
+        VALUES ((select uuid()), #{action}, #{params}, now(), #{adminUserId})
+    </insert>
+
+    <!-- 通过ID查询系统账户详情信息 -->
+    <select id="queryAdminUserInfoById" resultType="HashMap">
+        select au.id as admin_user_id,au.nick_name,if(au.status ='0','正常','冻结') as status,au.phone,au.job,ag.name as group_name
+        ,date_format(au.create_time,'%Y-%m-%d %H:%i:%s') as create_time,au.username,au.header_pic_url
+        from admin_user as au
+        left join admin_user_group_relation as augr on augr.admin_user_id = au.id
+        left join admin_group as ag on ag.id  = augr.admin_group_id
+        WHERE au.id = #{showAdminUserId}
+    </select>
+
+    <!-- 新增系统用户 -->
+    <insert id="insertAdminUser">
+        INSERT INTO admin_user (`id`, `username`, `password`, `nick_name`, `status`, `phone`, `job`, `header_pic_url`, `create_time`)
+        VALUES (#{actionAdminUserId}, #{username}, #{password},#{nickname},0,#{phone},#{job},#{headerPicUrl},now())
+    </insert>
+
+    <!-- 新增系统用户与权限组关联信息 -->
+    <insert id="insertAdminUserGroup">
+        INSERT INTO admin_user_group_relation (`id`, `admin_user_id`, `admin_group_id`)
+        VALUES ((select uuid()), #{actionAdminUserId}, #{adminGroupId})
+    </insert>
+
+    <!-- 修改系统用户信息 -->
+    <update id="updateAdminUser">
+        update admin_user set update_time = now()
+        <if test="nickname != null">,nick_name = #{nickname}</if>
+        <if test="phone != null">,phone = #{phone}</if>
+        <if test="password != null">,password = #{password}</if>
+        <if test="headerPicUrl != null">,header_pic_url = #{headerPicUrl}</if>
+        <if test="status != null">,status = #{status}</if>
+        <if test="job != null">,job = #{job}</if>
+        where id = #{actionAdminUserId}
+    </update>
+
+    <!-- 修改系统用户与权限组关联信息 -->
+    <update id="updateAdminUserGroup">
+        update admin_user_group_relation
+        set admin_group_id = #{adminGroupId}
+        where admin_user_id = #{actionAdminUserId}
+    </update>
+
+    <!-- 删除系统账户信息 -->
+    <delete id="delAdminUser">
+        delete from admin_user where id = #{actionAdminUserId}
+    </delete>
+
+    <!-- 删除系统账户与权限组关联信息 -->
+    <delete id="delAdminUserGroup">
+        delete from admin_user_group_relation where admin_user_id = #{actionAdminUserId}
+    </delete>
+
+    <!-- 删除系统账户日志信息 -->
+    <delete id="delAdminUserActionLog">
+        delete from admin_user_log where admin_user_id = #{actionAdminUserId}
+    </delete>
+
+    <!-- 通过条件查询系统权限组列表信息 -->
+    <select id="queryAdminGroupList" resultType="HashMap">
+        SELECT ag.id as admin_group_id,ag.name as admin_group_name,if(ago.c is null,0,ago.c) as admin_group_user_count
+        ,date_format(ag.create_time,'%Y-%m-%d %H:%i:%s') as create_time,ag.info as admin_group_info
+        FROM admin_group as ag
+        left join (select count(1) as c,admin_group_id from admin_user_group_relation as augr group by augr.admin_group_id) as ago
+        on ago.admin_group_id = ag.id
+        <where>
+            <if test="groupName != null">
+                and ag.name like CONCAT('%',#{groupName},'%')
+            </if>
+        </where>
+        order by ag.create_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 通过条件查询系统权限组总数量信息 -->
+    <select id="queryAdminGroupCount" resultType="Integer">
+        select count(1) from admin_group as ag
+        <where>
+            <if test="groupName != null">
+                and ag.name like CONCAT('%',#{groupName},'%')
+            </if>
+        </where>
+    </select>
+
+    <!-- 通过条件查询系统账户操作日志列表信息 -->
+    <select id="queryAdminUserLogList" resultType="HashMap">
+        SELECT id,action,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time FROM admin_user_log
+        <where>
+            <if test="viewAdminUserId != null">
+                and admin_user_id = #{viewAdminUserId}
+            </if>
+            <if test="beginTime != null">
+                <![CDATA[
+                and create_time >= #{beginTime} and create_time < #{endTime}
+                ]]>
+            </if>
+            <if test="action != null">
+                and action like CONCAT('%',#{action},'%')
+            </if>
+            <if test="paramsStr != null">
+                and params like CONCAT('%',#{paramsStr},'%')
+            </if>
+        </where>
+        order by create_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 通过条件查询系统账户操作日志总数量信息 -->
+    <select id="queryAdminUserLogCount" resultType="Integer">
+        SELECT count(1) FROM admin_user_log
+        <where>
+            <if test="viewAdminUserId != null">
+                and admin_user_id = #{viewAdminUserId}
+            </if>
+            <if test="beginTime != null">
+                <![CDATA[
+                and create_time >= #{beginTime} and create_time < #{endTime}
+                ]]>
+            </if>
+            <if test="action != null">
+                and action like CONCAT('%',#{action},'%')
+            </if>
+            <if test="paramsStr != null">
+                and params like CONCAT('%',#{paramsStr},'%')
+            </if>
+        </where>
+    </select>
+
+    <!-- 通过ID查询系统账户操作日志详情信息 -->
+    <select id="getAdminUserLogById" resultType="HashMap">
+        SELECT id,action,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time,params FROM admin_user_log
+        WHERE id = #{adminUserLogId}
+    </select>
+
+    <!-- 通过条件查询系统权限组详情信息 -->
+    <select id="getAdminGroupInfoById" resultType="HashMap">
+        SELECT ag.id as admin_group_id,ag.name as admin_group_name,if(ago.c is null,0,ago.c) as admin_group_user_count
+        ,date_format(ag.create_time,'%Y-%m-%d %H:%i:%s') as create_time,ag.info
+        FROM admin_group as ag
+        left join (select count(1) as c,admin_group_id from admin_user_group_relation as augr group by augr.admin_group_id) as ago
+        on ago.admin_group_id = ag.id
+        where ag.id = #{adminGroupId}
+    </select>
+
+    <!-- 查询系统权限组对应的账户列表信息 -->
+    <select id="queryAdminGroupUserRelationList" resultType="HashMap">
+        select au.id as admin_user_id,au.nick_name  from admin_user_group_relation as augr
+        left join admin_user as au on au.id = augr.admin_user_id
+        where augr.admin_group_id = #{adminGroupId}
+    </select>
+
+    <!-- 查询系统权限组未对应的账户列表信息 -->
+    <select id="queryAdminGroupUserRelationNotList" resultType="HashMap">
+        select au.id as admin_user_id,au.nick_name from admin_user as au
+        left join admin_user_group_relation as augr on augr.admin_user_id = au.id
+        where augr.id is null
+    </select>
+
+    <!-- 查询系统权限组对应的权限列表信息 -->
+    <select id="queryAdminGroupRoleRelationList" resultType="HashMap">
+        SELECT ar.id as admin_role_id,ar.name as role_name FROM admin_group_role_relation as agrr
+        left join admin_role as ar on ar.id = agrr.admin_role_id
+        where agrr.admin_group_id = #{adminGroupId} and ar.level = 1
+    </select>
+
+    <!-- 查询系统权限组未对应的权限列表信息 -->
+    <select id="queryAdminGroupRoleRelationNotList" resultType="HashMap">
+        select ar.id as admin_role_id,ar.name as role_name from admin_role as ar
+        where ar.id not in (select admin_role_id from admin_group_role_relation
+        where admin_group_id = #{adminGroupId})
+        and ar.level = '1'
+    </select>
+
+    <!-- 通过已经关联的规则组，查询子目录对应的根目录权限信息 -->
+    <select id="queryAdminGroupRootRoleRelationList" resultType="HashMap">
+        SELECT distinct(ar.pid) as admin_role_id FROM admin_group_role_relation as agrr
+        left join admin_role as ar on ar.id = agrr.admin_role_id
+        where agrr.admin_group_id = #{adminGroupId}
+    </select>
+
+    <!-- 新增系统规则组 -->
+    <insert id="insertAdminGroup">
+        INSERT INTO admin_group (`id`, `name`, `info`, `create_time`)
+        VALUES (#{adminGroupId}, #{name}, #{info},now())
+    </insert>
+
+    <!-- 新增系统规则组与系统账户关联关系 -->
+    <insert id="insertAdminGroupUserRelation">
+        INSERT INTO admin_user_group_relation (`id`, `admin_user_id`, `admin_group_id`)
+        <foreach item="item" index="index" collection="adminUserList" open="VALUES " separator="," close=";">
+            ((select uuid()), #{item},#{adminGroupId})
+        </foreach>
+    </insert>
+
+    <!-- 新增系统规则组与系统权限关联关系 -->
+    <insert id="insertAdminGroupRoleRelation">
+        INSERT INTO admin_group_role_relation (`id`, `admin_group_id`, `admin_role_id`)
+        <foreach item="item" index="index" collection="adminRoleList" open="VALUES " separator="," close=";">
+            ((select uuid()), #{adminGroupId},#{item})
+        </foreach>
+    </insert>
+
+    <!-- 新增用户房屋记录详情列表 -->
+    <insert id="insertAdminGroupRoleRootRelation">
+        INSERT INTO admin_group_role_relation (`id`, `admin_group_id`, `admin_role_id`)
+        <foreach item="item" index="index" collection="adminRoleRootList" open="VALUES " separator="," close=";">
+            ((select uuid()), #{adminGroupId},#{item.admin_role_id})
+        </foreach>
+    </insert>
+
+    <!-- 修改系统规则组信息 -->
+    <update id="updateAdminGroup">
+        update admin_group set update_time = now()
+        <if test="name != null">,name = #{name}</if>
+        <if test="info != null">,info = #{info}</if>
+        where id = #{adminGroupId}
+    </update>
+
+    <!-- 删除系统规则组信息 -->
+    <delete id="delAdminGroup">
+        delete from admin_group where id = #{adminGroupId}
+    </delete>
+
+    <!-- 删除系统规则组与系统账户关联信息 -->
+    <delete id="delAdminGroupUserRelation">
+        delete from admin_user_group_relation where admin_group_id = #{adminGroupId}
+    </delete>
+
+    <!-- 删除系统规则组与系统权限关联信息 -->
+    <delete id="delAdminGroupRoleRelation">
+        delete from admin_group_role_relation
+        <where>
+            <if test="adminGroupId != null">
+                and admin_group_id = #{adminGroupId}
+            </if>
+            <if test="adminRoleId != null">
+                and admin_role_id = #{adminRoleId}
+            </if>
+        </where>
+    </delete>
+
+    <!-- 通过条件查询系统账户操作日志列表信息 -->
+    <select id="queryAdminRoleList" resultType="HashMap">
+        SELECT ar.id as admin_role_id,ar.name as admin_role_name,ar.info as admin_role_info,ar.num,ar.level,ar.pid
+        ,ar1.name as admin_role_pid_name
+        ,aro.id as admin_role_object_id,aro.component,aro.name,aro.path,aro.redirect
+        ,armo.icon,armo.title,armo.id as admin_role_meta_object_id
+        FROM admin_role as ar
+        left join admin_role_object as aro on aro.id = ar.path
+        left join admin_role_meta_object as armo on armo.id = aro.meta
+        left join admin_role as ar1 on ar1.id = ar.pid
+        <where>
+            <if test="adminRoleName != null">
+                and ar.name like CONCAT('%',#{adminRoleName},'%')
+            </if>
+            <if test="level != null">
+                and ar.level = #{level}
+            </if>
+        </where>
+        order by ar.create_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 通过条件查询系统账户操作日志总数量信息 -->
+    <select id="queryAdminRoleCount" resultType="Integer">
+        SELECT count(1) FROM admin_role
+        <where>
+            <if test="adminRoleName != null">
+                and name like CONCAT('%',#{adminRoleName},'%')
+            </if>
+            <if test="action != null">
+                and level = #{level}
+            </if>
+        </where>
+    </select>
+
+    <!-- 查询系统权限详情信息 -->
+    <select id="getAdminRoleInfoById" resultType="HashMap">
+        SELECT ar.id as admin_role_id,ar.name as admin_role_name,ar.info as admin_role_info,ar.num,ar.level,ar.pid
+        ,ar1.name as admin_role_pid_name
+        ,aro.id as admin_role_object_id,aro.component,aro.name as admin_role_object_name,aro.path,aro.redirect
+        ,armo.icon,armo.title,armo.id as admin_role_meta_object_id
+        FROM admin_role as ar
+        left join admin_role_object as aro on aro.id = ar.path
+        left join admin_role_meta_object as armo on armo.id = aro.meta
+        left join admin_role as ar1 on ar1.id = ar.pid
+        where ar.id = #{adminRoleId}
+    </select>
+
+    <!-- 新增系统权限 -->
+    <insert id="insertAdminRole">
+        INSERT INTO admin_role (`id`, `name`, `info`, `path`, `pid`, `num`, `level`, `create_time`)
+        VALUES (#{adminRoleId}, #{adminRoleName}, #{info},#{adminRoleObjectId},#{pid},#{num},#{level},now())
+    </insert>
+
+    <!-- 新增系统权限关联信息1 -->
+    <insert id="insertAdminRoleObject">
+        INSERT INTO admin_role_object (`id`, `path`, `component`, `redirect`, `name`, `meta`)
+        VALUES (#{adminRoleObjectId}, #{path}, #{component},#{redirect},#{adminRoleObjectName},#{adminRoleMetaObjectId})
+    </insert>
+
+    <!-- 新增系统权限关联信息2 -->
+    <insert id="insertAdminRoleMetaObject">
+        INSERT INTO admin_role_meta_object (`id`, `title`, `icon`)
+        VALUES (#{adminRoleMetaObjectId}, #{title}, #{icon})
+    </insert>
+
+    <!-- 修改系统权限基本信息 -->
+    <update id="updateAdminRole">
+        update admin_role set name = #{adminRoleName},info = #{info},pid = #{pid},num = #{num},level = #{level}
+        where id = #{adminRoleId}
+    </update>
+
+    <!-- 修改系统权限关联信息1 -->
+    <update id="updateAdminRoleObject">
+        update admin_role_object set name = #{adminRoleObjectName},path = #{path},component = #{component},redirect = #{redirect}
+        where id = #{adminRoleObjectId}
+    </update>
+
+    <!-- 修改系统权限关联信息2 -->
+    <update id="updateAdminRoleMetaObject">
+        update admin_role_meta_object set title = #{title},icon = #{icon}
+        where id = #{adminRoleMetaObjectId}
+    </update>
+
+    <!-- 删除系统权限基本信息 -->
+    <delete id="delAdminRole">
+        delete from admin_role where id = #{adminRoleId}
+    </delete>
+
+    <!-- 删除系统权限关联信息1 -->
+    <delete id="delAdminRoleObject">
+        delete from admin_role_object where id = #{adminRoleObjectId}
+    </delete>
+
+    <!-- 删除系统权限关联信息2 -->
+    <delete id="delAdminRoleMetaObject">
+        delete from admin_role_meta_object where id = #{adminRoleMetaObjectId}
+    </delete>
+
+
+
+
+</mapper>

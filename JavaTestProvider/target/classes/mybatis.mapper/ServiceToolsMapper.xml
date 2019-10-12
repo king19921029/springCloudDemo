@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.yuanqi.dao.IServiceToolsMapper" >
+
+    <!-- 通过条件查询服务列表信息 -->
+    <select id="queryServiceList" resultType="HashMap">
+        select id as service_id,name as service_name,count,time
+        from service_info
+        <where>
+            <if test="serviceName != null">
+                and name like CONCAT('%',#{serviceName},'%')
+            </if>
+        </where>
+        order by create_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 通过条件查询服务列表总数信息 -->
+    <select id="queryServiceCount" resultType="Integer">
+        SELECT count(1) FROM service_info
+        <where>
+            <if test="serviceName != null">
+                and name like CONCAT('%',#{serviceName},'%')
+            </if>
+        </where>
+    </select>
+
+    <!-- 通过ID查询服务详情信息 -->
+    <select id="getServiceInfoById" resultType="HashMap">
+        select * from service_info
+        where id = #{serviceId}
+    </select>
+
+    <!-- 新增服务信息 -->
+    <insert id="insertService">
+        INSERT INTO service_info (`id`, `name`, `info`, `area`, `tips`, `standard`, `count`, `time`, `create_time`)
+        VALUES (#{serviceId}, #{serviceName},#{info},#{area},#{tips},#{standard},#{count},#{time},now())
+    </insert>
+
+    <!-- 修改服务信息 -->
+    <update id="updateService">
+        update service_info set update_time = now()
+        <if test="serviceName != null">,name = #{serviceName}</if>
+        <if test="info != null">,info = #{info}</if>
+        <if test="area != null">,area = #{area}</if>
+        <if test="tips != null">,tips = #{tips}</if>
+        <if test="standard != null">,standard = #{standard}</if>
+        <if test="count != null">,count = #{count}</if>
+        <if test="time != null">,time = #{time}</if>
+        where id = #{serviceId}
+    </update>
+
+    <!-- 删除服务信息 -->
+    <delete id="delService">
+        delete from service_info where id = #{serviceId}
+    </delete>
+
+    <!-- 通过条件查询工具列表信息 -->
+    <select id="queryToolsList" resultType="HashMap">
+        select id as tools_id,name as tools_name,brand,instruction,info,measure,properties
+        from tools
+        <where>
+            <if test="toolsName != null">
+                and name like CONCAT('%',#{toolsName},'%')
+            </if>
+        </where>
+        order by create_time desc
+        limit ${skip},${size}
+    </select>
+
+    <!-- 通过条件查询工具列表总数信息 -->
+    <select id="queryToolsCount" resultType="Integer">
+        SELECT count(1) FROM tools
+        <where>
+            <if test="toolsName != null">
+                and name like CONCAT('%',#{toolsName},'%')
+            </if>
+        </where>
+    </select>
+
+    <!-- 通过ID查询工具详情信息 -->
+    <select id="getToolsInfoById" resultType="HashMap">
+        select * from tools
+        where id = #{toolsId}
+    </select>
+
+    <!-- 新增工具信息 -->
+    <insert id="insertTools">
+        INSERT INTO tools (`id`, `name`, `brand`, `instruction`, `info`, `measure`, `properties`, `create_time`)
+        VALUES ((select uuid()), #{toolsName},#{brand},#{instruction},#{info},#{measure},#{properties},now())
+    </insert>
+
+    <!-- 修改工具信息 -->
+    <update id="updateTools">
+        update tools set update_time = now()
+        <if test="toolsName != null">,name = #{toolsName}</if>
+        <if test="brand != null">,brand = #{brand}</if>
+        <if test="instruction != null">,instruction = #{instruction}</if>
+        <if test="info != null">,info = #{info}</if>
+        <if test="measure != null">,measure = #{measure}</if>
+        <if test="properties != null">,properties = #{properties}</if>
+        where id = #{toolsId}
+    </update>
+
+    <!-- 删除工具信息 -->
+    <delete id="delTools">
+        delete from tools where id = #{toolsId}
+    </delete>
+
+</mapper>

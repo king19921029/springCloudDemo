@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.yuanqi.dao.IShopMapper" >
+    <!-- 获取全部商品 -->
+    <select id="getShopList" resultType="HashMap">
+        SELECT * FROM lixu.shop_list;
+    </select>
+
+    <!-- 删除 -->
+    <delete id="delShop">
+        delete from lixu.shop_list where id = #{shopId}
+    </delete>
+
+    <!-- 新增商品 -->
+    <insert id="addShop">
+        INSERT INTO lixu.shop_list (`id`, `pic`, `name`)
+        VALUES (#{id}, #{pic}, #{name})
+    </insert>
+
+    <!-- 更新商品信息 -->
+    <update id="updateShop">
+        update lixu.shop_list set name = #{name}, pic = #{pic}
+        where id = #{id};
+    </update>
+
+    <!-- 升降序 -->
+    <select id="sortShopList" resultType="HashMap">
+        SELECT * FROM lixu.shop_list ORDER BY pic
+        <if test="type == 0"> DESC</if>
+    </select>
+
+</mapper>

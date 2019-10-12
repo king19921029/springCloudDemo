@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.yuanqi.dao.IDataActionMapper" >
+
+    <!-- 新增区县信息 -->
+    <insert id="insertCounty">
+        INSERT INTO county (`id`, `code`, `label`, `pid`)
+        <foreach item="item" index="index" collection="countyList" open="VALUES " separator="," close=";">
+            ((select uuid()), #{item.value},#{item.label},#{cityId})
+        </foreach>
+    </insert>
+
+    <!-- 新增城市信息 -->
+    <insert id="insertCity">
+        INSERT INTO city (`id`, `code`, `label`, `pid`)
+        VALUES (#{cityId}, #{code},#{label},#{provinceId})
+    </insert>
+
+    <!-- 新增省份信息 -->
+    <insert id="insertProvince">
+        INSERT INTO province (`id`, `code`, `label`)
+        VALUES (#{provinceId}, #{code},#{label})
+    </insert>
+
+    <!-- 删除区县信息 -->
+    <delete id="delCounty">
+        delete from county
+    </delete>
+
+    <!-- 删除城市信息 -->
+    <delete id="delCity">
+        delete from city
+    </delete>
+
+    <!-- 删除省份信息 -->
+    <delete id="delProvince">
+        delete from province
+    </delete>
+
+</mapper>

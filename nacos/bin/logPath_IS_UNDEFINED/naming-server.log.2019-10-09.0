@@ -1,0 +1,43 @@
+2019-10-09 14:13:55,198 INFO [NACOS-DISTRO] healthy server list changed, disable health check for 60000 ms from now on, old: [], new: [{"adWeight":0,"alive":true,"ip":"192.168.1.104","key":"192.168.1.104:8848","lastRefTime":1570601620192,"lastRefTimeStr":"2019-10-09 14:13:40","servePort":8848,"site":"unknown","weight":4}]
+
+2019-10-09 14:13:55,198 INFO receive config info: unknown#192.168.1.104:8848#1570601635198#4
+
+
+2019-10-09 14:14:10,203 INFO receive config info: unknown#192.168.1.104:8848#1570601650203#4
+
+
+2019-10-09 14:14:25,205 INFO receive config info: unknown#192.168.1.104:8848#1570601665205#4
+
+
+2019-10-09 14:14:40,210 INFO receive config info: unknown#192.168.1.104:8848#1570601680210#4
+
+
+2019-10-09 14:14:55,213 INFO [NACOS-DISTRO] distro threshold restored and stable now, enable health check. current ratio: 1.0
+
+2019-10-09 14:14:55,213 INFO receive config info: unknown#192.168.1.104:8848#1570601695213#4
+
+
+2019-10-09 14:15:10,218 INFO receive config info: unknown#192.168.1.104:8848#1570601710218#4
+
+
+2019-10-09 14:15:25,222 INFO receive config info: unknown#192.168.1.104:8848#1570601725222#4
+
+
+2019-10-09 14:15:40,224 INFO receive config info: unknown#192.168.1.104:8848#1570601740224#4
+
+
+2019-10-09 14:15:55,229 INFO receive config info: unknown#192.168.1.104:8848#1570601755229#4
+
+
+2019-10-09 14:16:10,231 INFO receive config info: unknown#192.168.1.104:8848#1570601770231#4
+
+
+2019-10-09 14:16:25,235 INFO receive config info: unknown#192.168.1.104:8848#1570601785235#4
+
+
+2019-10-09 14:16:40,240 INFO receive config info: unknown#192.168.1.104:8848#1570601800240#4
+
+
+2019-10-09 14:16:55,243 INFO receive config info: unknown#192.168.1.104:8848#1570601815243#4
+
+

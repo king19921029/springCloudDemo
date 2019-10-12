@@ -1,0 +1,369 @@
+2019-10-12 13:40:19,638 INFO listen for service meta change
+
+2019-10-12 13:40:23,226 INFO [SERVER-INIT] got port: 8848
+
+2019-10-12 13:40:23,226 INFO [SERVER-INIT] got path: /nacos
+
+2019-10-12 13:40:24,461 INFO receive config info: unknown#192.168.1.104:8848#1570858824461#4
+
+
+2019-10-12 13:40:33,679 INFO creating empty service public:DEFAULT_GROUP@@yuanqi-service-consumer
+
+2019-10-12 13:40:33,697 INFO [NEW-SERVICE] {"appName":"","checksum":"6eb39826a7f09d9922e95dbbe8b222ab","clusterMap":{},"enabled":true,"groupName":"DEFAULT_GROUP","ipDeleteTimeout":30000,"lastModifiedMillis":1570858833682,"metadata":{},"name":"DEFAULT_GROUP@@yuanqi-service-consumer","namespaceId":"public","owners":[],"protectThreshold":0.0,"resetWeight":false,"selector":{"type":"none"},"token":""}
+
+2019-10-12 13:40:33,720 WARN cluster: DEFAULT not found, ip: {"app":"DEFAULT","clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.104#18082#DEFAULT#DEFAULT_GROUP@@yuanqi-service-consumer","ip":"192.168.1.104","ipDeleteTimeout":30000,"lastBeat":1570858833674,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":18082,"serviceName":"DEFAULT_GROUP@@yuanqi-service-consumer","tenant":"","weight":1.0}, will create new cluster with default configuration.
+
+2019-10-12 13:40:33,725 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@yuanqi-service-consumer, value: {"cachedChecksum":"","instanceList":[{"app":"DEFAULT","clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.104#18082#DEFAULT#DEFAULT_GROUP@@yuanqi-service-consumer","ip":"192.168.1.104","ipDeleteTimeout":30000,"lastBeat":1570858833674,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":18082,"serviceName":"DEFAULT_GROUP@@yuanqi-service-consumer","tenant":"","weight":1.0}]}
+
+2019-10-12 13:40:39,462 INFO [NACOS-DISTRO] healthy server list changed, disable health check for 60000 ms from now on, old: [], new: [{"adWeight":0,"alive":true,"ip":"192.168.1.104","key":"192.168.1.104:8848","lastRefTime":1570858824461,"lastRefTimeStr":"2019-10-12 13:40:24","servePort":8848,"site":"unknown","weight":4}]
+
+2019-10-12 13:40:39,463 INFO receive config info: unknown#192.168.1.104:8848#1570858839463#4
+
+
+2019-10-12 13:40:49,601 INFO creating empty service public:DEFAULT_GROUP@@yuanqi-service-provider
+
+2019-10-12 13:40:49,602 INFO [NEW-SERVICE] {"appName":"","checksum":"28f4f899d5e04533aa2294327ada4cb4","clusterMap":{},"enabled":true,"groupName":"DEFAULT_GROUP","ipDeleteTimeout":30000,"lastModifiedMillis":1570858849601,"metadata":{},"name":"DEFAULT_GROUP@@yuanqi-service-provider","namespaceId":"public","owners":[],"protectThreshold":0.0,"resetWeight":false,"selector":{"type":"none"},"token":""}
+
+2019-10-12 13:40:49,602 WARN cluster: DEFAULT not found, ip: {"app":"DEFAULT","clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.104#18081#DEFAULT#DEFAULT_GROUP@@yuanqi-service-provider","ip":"192.168.1.104","ipDeleteTimeout":30000,"lastBeat":1570858849601,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":18081,"serviceName":"DEFAULT_GROUP@@yuanqi-service-provider","tenant":"","weight":1.0}, will create new cluster with default configuration.
+
+2019-10-12 13:40:49,602 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@yuanqi-service-provider, value: {"cachedChecksum":"","instanceList":[{"app":"DEFAULT","clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.104#18081#DEFAULT#DEFAULT_GROUP@@yuanqi-service-provider","ip":"192.168.1.104","ipDeleteTimeout":30000,"lastBeat":1570858849601,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":18081,"serviceName":"DEFAULT_GROUP@@yuanqi-service-provider","tenant":"","weight":1.0}]}
+
+2019-10-12 13:40:54,465 INFO receive config info: unknown#192.168.1.104:8848#1570858854465#4
+
+
+2019-10-12 13:41:09,469 INFO receive config info: unknown#192.168.1.104:8848#1570858869469#4
+
+
+2019-10-12 13:41:24,469 INFO receive config info: unknown#192.168.1.104:8848#1570858884469#4
+
+
+2019-10-12 13:41:39,473 INFO [NACOS-DISTRO] distro threshold restored and stable now, enable health check. current ratio: 1.0
+
+2019-10-12 13:41:39,473 INFO receive config info: unknown#192.168.1.104:8848#1570858899473#4
+
+
+2019-10-12 13:41:54,475 INFO receive config info: unknown#192.168.1.104:8848#1570858914475#4
+
+
+2019-10-12 13:42:09,480 INFO receive config info: unknown#192.168.1.104:8848#1570858929480#4
+
+
+2019-10-12 13:42:24,484 INFO receive config info: unknown#192.168.1.104:8848#1570858944484#4
+
+
+2019-10-12 13:42:39,488 INFO receive config info: unknown#192.168.1.104:8848#1570858959488#4
+
+
+2019-10-12 13:42:54,493 INFO receive config info: unknown#192.168.1.104:8848#1570858974492#4
+
+
+2019-10-12 13:43:09,498 INFO receive config info: unknown#192.168.1.104:8848#1570858989498#4
+
+
+2019-10-12 13:43:24,498 INFO receive config info: unknown#192.168.1.104:8848#1570859004498#4
+
+
+2019-10-12 13:43:39,501 INFO receive config info: unknown#192.168.1.104:8848#1570859019500#4
+
+
+2019-10-12 13:43:54,506 INFO receive config info: unknown#192.168.1.104:8848#1570859034506#4
+
+
+2019-10-12 13:44:09,507 INFO receive config info: unknown#192.168.1.104:8848#1570859049507#4
+
+
+2019-10-12 13:44:24,513 INFO receive config info: unknown#192.168.1.104:8848#1570859064513#4
+
+
+2019-10-12 13:44:39,515 INFO receive config info: unknown#192.168.1.104:8848#1570859079515#4
+
+
+2019-10-12 13:44:54,516 INFO receive config info: unknown#192.168.1.104:8848#1570859094516#4
+
+
+2019-10-12 13:45:09,520 INFO receive config info: unknown#192.168.1.104:8848#1570859109520#4
+
+
+2019-10-12 13:45:24,523 INFO receive config info: unknown#192.168.1.104:8848#1570859124523#4
+
+
+2019-10-12 13:45:39,525 INFO receive config info: unknown#192.168.1.104:8848#1570859139525#4
+
+
+2019-10-12 13:45:54,526 INFO receive config info: unknown#192.168.1.104:8848#1570859154526#4
+
+
+2019-10-12 13:46:09,528 INFO receive config info: unknown#192.168.1.104:8848#1570859169528#4
+
+
+2019-10-12 13:46:24,529 INFO receive config info: unknown#192.168.1.104:8848#1570859184529#4
+
+
+2019-10-12 13:46:39,529 INFO receive config info: unknown#192.168.1.104:8848#1570859199529#4
+
+
+2019-10-12 13:46:54,531 INFO receive config info: unknown#192.168.1.104:8848#1570859214531#4
+
+
+2019-10-12 13:47:53,572 INFO [NACOS-DISTRO] healthy server list changed, disable health check for 60000 ms from now on, old: [{"adWeight":0,"alive":true,"ip":"192.168.1.104","key":"192.168.1.104:8848","lastRefTime":1570858824461,"lastRefTimeStr":"2019-10-12 13:40:24","servePort":8848,"site":"unknown","weight":4}], new: []
+
+2019-10-12 13:47:53,572 INFO receive config info: unknown#192.168.1.104:8848#1570859273572#4
+
+
+2019-10-12 13:48:08,572 INFO receive config info: unknown#192.168.1.104:8848#1570859288572#4
+
+
+2019-10-12 13:48:23,583 INFO receive config info: unknown#192.168.1.104:8848#1570859303583#4
+
+
+2019-10-12 13:48:38,592 INFO receive config info: unknown#192.168.1.104:8848#1570859318591#4
+
+
+2019-10-12 13:50:09,003 INFO [AUTO-DELETE-IP] service: DEFAULT_GROUP@@yuanqi-service-consumer, ip: {"app":"DEFAULT","clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":false,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.104#18082#DEFAULT#DEFAULT_GROUP@@yuanqi-service-consumer","ip":"192.168.1.104","ipDeleteTimeout":30000,"lastBeat":1570859317682,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":18082,"serviceName":"DEFAULT_GROUP@@yuanqi-service-consumer","tenant":"","weight":1.0}
+
+2019-10-12 13:50:09,272 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@yuanqi-service-consumer, value: {"cachedChecksum":"","instanceList":[]}
+
+2019-10-12 13:50:14,283 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@yuanqi-service-consumer, value: {"cachedChecksum":"","instanceList":[{"app":"","clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.104#18082#DEFAULT#DEFAULT_GROUP@@yuanqi-service-consumer","ip":"192.168.1.104","ipDeleteTimeout":30000,"lastBeat":1570859414283,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":18082,"serviceName":"DEFAULT_GROUP@@yuanqi-service-consumer","tenant":"","weight":1.0}]}
+
+2019-10-12 13:50:19,823 INFO receive config info: unknown#192.168.1.104:8848#1570859419823#4
+
+
+2019-10-12 13:50:34,827 INFO [NACOS-DISTRO] distro threshold restored and stable now, enable health check. current ratio: 1.0
+
+2019-10-12 13:50:34,827 INFO [NACOS-DISTRO] healthy server list changed, disable health check for 60000 ms from now on, old: [], new: [{"adWeight":0,"alive":true,"ip":"192.168.1.104","key":"192.168.1.104:8848","lastRefTime":1570859419823,"lastRefTimeStr":"2019-10-12 13:50:19","servePort":8848,"site":"unknown","weight":4}]
+
+2019-10-12 13:50:34,827 INFO receive config info: unknown#192.168.1.104:8848#1570859434827#4
+
+
+2019-10-12 13:50:49,828 INFO receive config info: unknown#192.168.1.104:8848#1570859449828#4
+
+
+2019-10-12 13:51:04,831 INFO receive config info: unknown#192.168.1.104:8848#1570859464831#4
+
+
+2019-10-12 13:51:19,832 INFO receive config info: unknown#192.168.1.104:8848#1570859479832#4
+
+
+2019-10-12 13:51:34,832 INFO [NACOS-DISTRO] distro threshold restored and stable now, enable health check. current ratio: 1.0
+
+2019-10-12 13:51:34,832 INFO receive config info: unknown#192.168.1.104:8848#1570859494832#4
+
+
+2019-10-12 13:51:49,835 INFO receive config info: unknown#192.168.1.104:8848#1570859509835#4
+
+
+2019-10-12 13:52:04,836 INFO receive config info: unknown#192.168.1.104:8848#1570859524836#4
+
+
+2019-10-12 13:52:19,837 INFO receive config info: unknown#192.168.1.104:8848#1570859539837#4
+
+
+2019-10-12 13:52:34,838 INFO receive config info: unknown#192.168.1.104:8848#1570859554838#4
+
+
+2019-10-12 13:52:49,841 INFO receive config info: unknown#192.168.1.104:8848#1570859569841#4
+
+
+2019-10-12 13:53:04,844 INFO receive config info: unknown#192.168.1.104:8848#1570859584844#4
+
+
+2019-10-12 13:53:19,847 INFO receive config info: unknown#192.168.1.104:8848#1570859599846#4
+
+
+2019-10-12 13:53:34,847 INFO receive config info: unknown#192.168.1.104:8848#1570859614847#4
+
+
+2019-10-12 13:53:49,848 INFO receive config info: unknown#192.168.1.104:8848#1570859629848#4
+
+
+2019-10-12 13:54:04,848 INFO receive config info: unknown#192.168.1.104:8848#1570859644848#4
+
+
+2019-10-12 13:54:19,849 INFO receive config info: unknown#192.168.1.104:8848#1570859659849#4
+
+
+2019-10-12 13:54:34,851 INFO receive config info: unknown#192.168.1.104:8848#1570859674851#4
+
+
+2019-10-12 13:54:49,852 INFO receive config info: unknown#192.168.1.104:8848#1570859689852#4
+
+
+2019-10-12 13:55:04,852 INFO receive config info: unknown#192.168.1.104:8848#1570859704852#4
+
+
+2019-10-12 13:55:19,858 INFO receive config info: unknown#192.168.1.104:8848#1570859719858#4
+
+
+2019-10-12 13:55:34,859 INFO receive config info: unknown#192.168.1.104:8848#1570859734859#4
+
+
+2019-10-12 13:55:49,861 INFO receive config info: unknown#192.168.1.104:8848#1570859749861#4
+
+
+2019-10-12 13:56:04,864 INFO receive config info: unknown#192.168.1.104:8848#1570859764864#4
+
+
+2019-10-12 13:56:19,868 INFO receive config info: unknown#192.168.1.104:8848#1570859779868#4
+
+
+2019-10-12 13:56:22,347 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@yuanqi-service-consumer, value: {"cachedChecksum":"","instanceList":[]}
+
+2019-10-12 13:56:24,193 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@yuanqi-service-provider, value: {"cachedChecksum":"","instanceList":[]}
+
+2019-10-12 13:56:26,909 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@yuanqi-service-consumer, value: {"cachedChecksum":"","instanceList":[{"app":"DEFAULT","clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.104#18082#DEFAULT#DEFAULT_GROUP@@yuanqi-service-consumer","ip":"192.168.1.104","ipDeleteTimeout":30000,"lastBeat":1570859786909,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":18082,"serviceName":"DEFAULT_GROUP@@yuanqi-service-consumer","tenant":"","weight":1.0}]}
+
+2019-10-12 13:56:33,072 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@yuanqi-service-provider, value: {"cachedChecksum":"","instanceList":[{"app":"DEFAULT","clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceId":"192.168.1.104#18081#DEFAULT#DEFAULT_GROUP@@yuanqi-service-provider","ip":"192.168.1.104","ipDeleteTimeout":30000,"lastBeat":1570859793071,"marked":false,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":18081,"serviceName":"DEFAULT_GROUP@@yuanqi-service-provider","tenant":"","weight":1.0}]}
+
+2019-10-12 13:56:34,873 INFO receive config info: unknown#192.168.1.104:8848#1570859794873#4
+
+
+2019-10-12 13:56:49,873 INFO receive config info: unknown#192.168.1.104:8848#1570859809873#4
+
+
+2019-10-12 13:57:04,878 INFO receive config info: unknown#192.168.1.104:8848#1570859824878#4
+
+
+2019-10-12 13:57:19,881 INFO receive config info: unknown#192.168.1.104:8848#1570859839881#4
+
+
+2019-10-12 13:57:34,885 INFO receive config info: unknown#192.168.1.104:8848#1570859854885#4
+
+
+2019-10-12 13:57:49,890 INFO receive config info: unknown#192.168.1.104:8848#1570859869890#4
+
+
+2019-10-12 13:58:04,894 INFO receive config info: unknown#192.168.1.104:8848#1570859884894#4
+
+
+2019-10-12 13:58:19,895 INFO receive config info: unknown#192.168.1.104:8848#1570859899895#4
+
+
+2019-10-12 13:58:34,899 INFO receive config info: unknown#192.168.1.104:8848#1570859914899#4
+
+
+2019-10-12 13:58:49,900 INFO receive config info: unknown#192.168.1.104:8848#1570859929900#4
+
+
+2019-10-12 13:59:04,903 INFO receive config info: unknown#192.168.1.104:8848#1570859944903#4
+
+
+2019-10-12 13:59:19,905 INFO receive config info: unknown#192.168.1.104:8848#1570859959904#4
+
+
+2019-10-12 13:59:34,909 INFO receive config info: unknown#192.168.1.104:8848#1570859974909#4
+
+
+2019-10-12 13:59:49,910 INFO receive config info: unknown#192.168.1.104:8848#1570859989910#4
+
+
+2019-10-12 14:00:04,914 INFO receive config info: unknown#192.168.1.104:8848#1570860004914#4
+
+
+2019-10-12 14:00:19,919 INFO receive config info: unknown#192.168.1.104:8848#1570860019919#4
+
+
+2019-10-12 14:00:34,922 INFO receive config info: unknown#192.168.1.104:8848#1570860034922#4
+
+
+2019-10-12 14:00:49,923 INFO receive config info: unknown#192.168.1.104:8848#1570860049923#4
+
+
+2019-10-12 14:01:04,928 INFO receive config info: unknown#192.168.1.104:8848#1570860064928#4
+
+
+2019-10-12 14:01:19,929 INFO receive config info: unknown#192.168.1.104:8848#1570860079929#4
+
+
+2019-10-12 14:01:34,930 INFO receive config info: unknown#192.168.1.104:8848#1570860094930#4
+
+
+2019-10-12 14:01:49,932 INFO receive config info: unknown#192.168.1.104:8848#1570860109932#4
+
+
+2019-10-12 14:02:04,937 INFO receive config info: unknown#192.168.1.104:8848#1570860124937#4
+
+
+2019-10-12 14:02:19,942 INFO receive config info: unknown#192.168.1.104:8848#1570860139942#4
+
+
+2019-10-12 14:02:34,947 INFO receive config info: unknown#192.168.1.104:8848#1570860154947#4
+
+
+2019-10-12 14:02:49,951 INFO receive config info: unknown#192.168.1.104:8848#1570860169951#4
+
+
+2019-10-12 14:03:04,956 INFO receive config info: unknown#192.168.1.104:8848#1570860184956#4
+
+
+2019-10-12 14:03:19,960 INFO receive config info: unknown#192.168.1.104:8848#1570860199960#4
+
+
+2019-10-12 14:03:34,964 INFO receive config info: unknown#192.168.1.104:8848#1570860214964#4
+
+
+2019-10-12 14:03:49,965 INFO receive config info: unknown#192.168.1.104:8848#1570860229965#4
+
+
+2019-10-12 14:04:04,965 INFO receive config info: unknown#192.168.1.104:8848#1570860244965#4
+
+
+2019-10-12 14:04:19,970 INFO receive config info: unknown#192.168.1.104:8848#1570860259970#4
+
+
+2019-10-12 14:04:34,974 INFO receive config info: unknown#192.168.1.104:8848#1570860274974#4
+
+
+2019-10-12 14:04:49,980 INFO receive config info: unknown#192.168.1.104:8848#1570860289980#4
+
+
+2019-10-12 14:05:04,980 INFO receive config info: unknown#192.168.1.104:8848#1570860304980#4
+
+
+2019-10-12 14:05:19,984 INFO receive config info: unknown#192.168.1.104:8848#1570860319984#4
+
+
+2019-10-12 14:05:34,986 INFO receive config info: unknown#192.168.1.104:8848#1570860334986#4
+
+
+2019-10-12 14:05:49,989 INFO receive config info: unknown#192.168.1.104:8848#1570860349989#4
+
+
+2019-10-12 14:06:04,995 INFO receive config info: unknown#192.168.1.104:8848#1570860364995#4
+
+
+2019-10-12 14:06:20,000 INFO receive config info: unknown#192.168.1.104:8848#1570860380000#4
+
+
+2019-10-12 14:06:35,000 INFO receive config info: unknown#192.168.1.104:8848#1570860395000#4
+
+
+2019-10-12 14:06:50,004 INFO receive config info: unknown#192.168.1.104:8848#1570860410004#4
+
+
+2019-10-12 14:07:05,009 INFO receive config info: unknown#192.168.1.104:8848#1570860425009#4
+
+
+2019-10-12 14:07:20,013 INFO receive config info: unknown#192.168.1.104:8848#1570860440013#4
+
+
+2019-10-12 14:07:35,018 INFO receive config info: unknown#192.168.1.104:8848#1570860455018#4
+
+
+2019-10-12 14:07:50,019 INFO receive config info: unknown#192.168.1.104:8848#1570860470019#4
+
+
+2019-10-12 14:08:05,023 INFO receive config info: unknown#192.168.1.104:8848#1570860485023#4
+
+
+2019-10-12 14:08:20,027 INFO receive config info: unknown#192.168.1.104:8848#1570860500027#4
+
+
+2019-10-12 14:08:35,031 INFO receive config info: unknown#192.168.1.104:8848#1570860515031#4
+
+
+2019-10-12 14:08:50,035 INFO receive config info: unknown#192.168.1.104:8848#1570860530035#4
+
+
+2019-10-12 14:09:05,041 INFO receive config info: unknown#192.168.1.104:8848#1570860545041#4
+
+

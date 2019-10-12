@@ -1,0 +1,16 @@
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/comm/TokenUserDTO.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/controller/AdminUserController.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/controller/BaseController.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/remote/CoreServiceRemote.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/security/VerifyTokenFilter.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/comm/ResponseUtil.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/controller/UserController.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/comm/Response.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/comm/TokenUserAuthentication.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/comm/JwtTokenUtil.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/comm/CommonBeanConfig.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/comm/ResponseCode.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/security/CoreFilter.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/ConsumerApplication.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/security/SecurityConfig.java
+/Users/lixu/Desktop/github/JavaTestC/src/main/java/com/yuanqi/comm/CommonException.java

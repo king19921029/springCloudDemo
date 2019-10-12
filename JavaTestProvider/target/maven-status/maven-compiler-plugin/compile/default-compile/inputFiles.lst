@@ -1,0 +1,14 @@
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/dao/IAdminUserMapper.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/comm/ResponseCode.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/service/impl/AdminUserServiceImpl.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/service/ShopService.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/contorller/ShopController.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/dao/IShopMapper.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/comm/ResponseUtil.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/service/impl/ShopServiceImpl.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/service/AdminUserService.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/comm/RedissonAutoConfiguration.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/contorller/AdminUserController.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/comm/Response.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/ProviderApplication.java
+/Users/lixu/Desktop/github/JavaTestP/src/main/java/com/yuanqi/comm/Base64PasswordEncoder.java

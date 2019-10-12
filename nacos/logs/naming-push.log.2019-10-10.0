@@ -1,0 +1,1310 @@
+2019-10-10 09:33:45,716 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 09:33:59,378 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 09:37:22,666 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 09:37:22,667 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:61966, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,61966,2515672554780
+
+2019-10-10 09:37:22,667 INFO send udp packet: 192.168.1.104,61966,2515672554780
+
+2019-10-10 09:37:22,669 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:51788, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51788,2515672554780
+
+2019-10-10 09:37:22,669 INFO send udp packet: 192.168.1.104,51788,2515672554780
+
+2019-10-10 09:37:22,679 INFO received ack: {"type": "push-ack", "lastRefTime":"2515672554780", "data":""} from: 192.168.1.104:, cost: 61966 ms, unacked: 11, total push: 1
+
+2019-10-10 09:37:28,184 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 09:37:28,185 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:61966, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,61966,2521190646693
+
+2019-10-10 09:37:28,186 INFO send udp packet: 192.168.1.104,61966,2521190646693
+
+2019-10-10 09:37:28,186 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:51788, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51788,2521190646693
+
+2019-10-10 09:37:28,186 INFO send udp packet: 192.168.1.104,51788,2521190646693
+
+2019-10-10 09:37:28,186 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,2521190646693
+
+2019-10-10 09:37:28,187 INFO send udp packet: 192.168.1.104,50071,2521190646693
+
+2019-10-10 09:37:28,188 INFO received ack: {"type": "push-ack", "lastRefTime":"2521190646693", "data":""} from: 192.168.1.104:, cost: 61966 ms, unacked: 2, total push: 3
+
+2019-10-10 09:37:28,191 INFO received ack: {"type": "push-ack", "lastRefTime":"2521190646693", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 4, total push: 2
+
+2019-10-10 09:37:32,673 INFO retry to push data, key: 192.168.1.104,51788,2515672554780
+
+2019-10-10 09:37:32,674 INFO send udp packet: 192.168.1.104,51788,2515672554780
+
+2019-10-10 09:37:38,186 INFO retry to push data, key: 192.168.1.104,51788,2521190646693
+
+2019-10-10 09:37:38,187 INFO send udp packet: 192.168.1.104,51788,2521190646693
+
+2019-10-10 09:37:42,675 INFO retry to push data, key: 192.168.1.104,51788,2515672554780
+
+2019-10-10 09:37:42,675 WARN max re-push times reached, retry times 2, key: 192.168.1.104,51788,2515672554780
+
+2019-10-10 09:37:48,192 INFO retry to push data, key: 192.168.1.104,51788,2521190646693
+
+2019-10-10 09:37:48,192 WARN max re-push times reached, retry times 2, key: 192.168.1.104,51788,2521190646693
+
+2019-10-10 09:50:57,738 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 09:50:57,738 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3330742842576
+
+2019-10-10 09:50:57,738 INFO send udp packet: 192.168.1.104,50071,3330742842576
+
+2019-10-10 09:50:57,739 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:61966, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,61966,3330742842576
+
+2019-10-10 09:50:57,739 INFO send udp packet: 192.168.1.104,61966,3330742842576
+
+2019-10-10 09:50:57,741 INFO received ack: {"type": "push-ack", "lastRefTime":"3330742842576", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 3, total push: 1
+
+2019-10-10 09:51:05,651 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 09:51:05,652 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:52296, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,52296,3338656612188
+
+2019-10-10 09:51:05,652 INFO send udp packet: 192.168.1.104,52296,3338656612188
+
+2019-10-10 09:51:05,652 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3338656612188
+
+2019-10-10 09:51:05,652 INFO send udp packet: 192.168.1.104,50071,3338656612188
+
+2019-10-10 09:51:05,653 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:61966, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,61966,3338656612188
+
+2019-10-10 09:51:05,653 INFO send udp packet: 192.168.1.104,61966,3338656612188
+
+2019-10-10 09:51:05,654 INFO received ack: {"type": "push-ack", "lastRefTime":"3338656612188", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 2, total push: 3
+
+2019-10-10 09:51:05,659 INFO received ack: {"type": "push-ack", "lastRefTime":"3338656612188", "data":""} from: 192.168.1.104:, cost: 52296 ms, unacked: 7, total push: 2
+
+2019-10-10 09:51:07,742 INFO retry to push data, key: 192.168.1.104,61966,3330742842576
+
+2019-10-10 09:51:07,742 INFO send udp packet: 192.168.1.104,61966,3330742842576
+
+2019-10-10 09:51:15,653 INFO retry to push data, key: 192.168.1.104,61966,3338656612188
+
+2019-10-10 09:51:15,654 INFO send udp packet: 192.168.1.104,61966,3338656612188
+
+2019-10-10 09:51:17,746 INFO retry to push data, key: 192.168.1.104,61966,3330742842576
+
+2019-10-10 09:51:17,747 WARN max re-push times reached, retry times 2, key: 192.168.1.104,61966,3330742842576
+
+2019-10-10 09:51:25,657 INFO retry to push data, key: 192.168.1.104,61966,3338656612188
+
+2019-10-10 09:51:25,657 WARN max re-push times reached, retry times 2, key: 192.168.1.104,61966,3338656612188
+
+2019-10-10 09:52:15,707 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 09:52:15,707 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3408711819664
+
+2019-10-10 09:52:15,707 INFO send udp packet: 192.168.1.104,50071,3408711819664
+
+2019-10-10 09:52:15,709 INFO received ack: {"type": "push-ack", "lastRefTime":"3408711819664", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 2, total push: 0
+
+2019-10-10 09:52:21,849 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 09:52:21,849 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:60600, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,60600,3414853924311
+
+2019-10-10 09:52:21,849 INFO send udp packet: 192.168.1.104,60600,3414853924311
+
+2019-10-10 09:52:21,849 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3414853924311
+
+2019-10-10 09:52:21,850 INFO send udp packet: 192.168.1.104,50071,3414853924311
+
+2019-10-10 09:52:21,851 INFO received ack: {"type": "push-ack", "lastRefTime":"3414853924311", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 1, total push: 1
+
+2019-10-10 09:52:21,854 INFO received ack: {"type": "push-ack", "lastRefTime":"3414853924311", "data":""} from: 192.168.1.104:, cost: 60600 ms, unacked: 5, total push: 0
+
+2019-10-10 09:54:39,779 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 09:54:39,780 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:60600, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,60600,3552784320745
+
+2019-10-10 09:54:39,780 INFO send udp packet: 192.168.1.104,60600,3552784320745
+
+2019-10-10 09:54:39,780 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3552784320745
+
+2019-10-10 09:54:39,780 INFO send udp packet: 192.168.1.104,50071,3552784320745
+
+2019-10-10 09:54:39,781 INFO received ack: {"type": "push-ack", "lastRefTime":"3552784320745", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 1, total push: 1
+
+2019-10-10 09:54:49,785 INFO retry to push data, key: 192.168.1.104,60600,3552784320745
+
+2019-10-10 09:54:49,785 INFO send udp packet: 192.168.1.104,60600,3552784320745
+
+2019-10-10 09:54:59,789 INFO retry to push data, key: 192.168.1.104,60600,3552784320745
+
+2019-10-10 09:54:59,790 WARN max re-push times reached, retry times 2, key: 192.168.1.104,60600,3552784320745
+
+2019-10-10 09:55:05,629 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 09:55:05,629 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3578633772798
+
+2019-10-10 09:55:05,629 INFO send udp packet: 192.168.1.104,50071,3578633772798
+
+2019-10-10 09:55:05,629 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:53614, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53614,3578633772798
+
+2019-10-10 09:55:05,629 INFO send udp packet: 192.168.1.104,53614,3578633772798
+
+2019-10-10 09:55:05,631 INFO received ack: {"type": "push-ack", "lastRefTime":"3578633772798", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 2, total push: 1
+
+2019-10-10 09:55:05,634 INFO received ack: {"type": "push-ack", "lastRefTime":"3578633772798", "data":""} from: 192.168.1.104:, cost: 53614 ms, unacked: 5, total push: 0
+
+2019-10-10 09:56:57,911 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 09:56:57,913 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3690917264540
+
+2019-10-10 09:56:57,913 INFO send udp packet: 192.168.1.104,50071,3690917264540
+
+2019-10-10 09:56:57,913 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:53614, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53614,3690917264540
+
+2019-10-10 09:56:57,913 INFO send udp packet: 192.168.1.104,53614,3690917264540
+
+2019-10-10 09:56:57,915 INFO received ack: {"type": "push-ack", "lastRefTime":"3690917264540", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 2, total push: 1
+
+2019-10-10 09:57:03,562 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 09:57:03,562 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3696566580426
+
+2019-10-10 09:57:03,562 INFO send udp packet: 192.168.1.104,50071,3696566580426
+
+2019-10-10 09:57:03,562 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50583, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50583,3696566580426
+
+2019-10-10 09:57:03,562 INFO send udp packet: 192.168.1.104,50583,3696566580426
+
+2019-10-10 09:57:03,562 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:53614, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53614,3696566580426
+
+2019-10-10 09:57:03,562 INFO send udp packet: 192.168.1.104,53614,3696566580426
+
+2019-10-10 09:57:03,563 INFO received ack: {"type": "push-ack", "lastRefTime":"3696566580426", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 1, total push: 3
+
+2019-10-10 09:57:03,566 INFO received ack: {"type": "push-ack", "lastRefTime":"3696566580426", "data":""} from: 192.168.1.104:, cost: 50583 ms, unacked: 4, total push: 2
+
+2019-10-10 09:57:07,916 INFO retry to push data, key: 192.168.1.104,53614,3690917264540
+
+2019-10-10 09:57:07,916 INFO send udp packet: 192.168.1.104,53614,3690917264540
+
+2019-10-10 09:57:13,563 INFO retry to push data, key: 192.168.1.104,53614,3696566580426
+
+2019-10-10 09:57:13,563 INFO send udp packet: 192.168.1.104,53614,3696566580426
+
+2019-10-10 09:57:17,920 INFO retry to push data, key: 192.168.1.104,53614,3690917264540
+
+2019-10-10 09:57:17,920 WARN max re-push times reached, retry times 2, key: 192.168.1.104,53614,3690917264540
+
+2019-10-10 09:57:23,568 INFO retry to push data, key: 192.168.1.104,53614,3696566580426
+
+2019-10-10 09:57:23,569 WARN max re-push times reached, retry times 2, key: 192.168.1.104,53614,3696566580426
+
+2019-10-10 10:00:33,335 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:00:33,335 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3906339509509
+
+2019-10-10 10:00:33,335 INFO send udp packet: 192.168.1.104,50071,3906339509509
+
+2019-10-10 10:00:33,335 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50583, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50583,3906339509509
+
+2019-10-10 10:00:33,335 INFO send udp packet: 192.168.1.104,50583,3906339509509
+
+2019-10-10 10:00:33,336 INFO received ack: {"type": "push-ack", "lastRefTime":"3906339509509", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 1, total push: 1
+
+2019-10-10 10:00:43,340 INFO retry to push data, key: 192.168.1.104,50583,3906339509509
+
+2019-10-10 10:00:43,340 INFO send udp packet: 192.168.1.104,50583,3906339509509
+
+2019-10-10 10:00:46,221 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:00:46,221 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:59641, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59641,3919225621245
+
+2019-10-10 10:00:46,221 INFO send udp packet: 192.168.1.104,59641,3919225621245
+
+2019-10-10 10:00:46,221 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3919225621245
+
+2019-10-10 10:00:46,221 INFO send udp packet: 192.168.1.104,50071,3919225621245
+
+2019-10-10 10:00:46,222 INFO received ack: {"type": "push-ack", "lastRefTime":"3919225621245", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 1, total push: 2
+
+2019-10-10 10:00:46,226 INFO received ack: {"type": "push-ack", "lastRefTime":"3919225621245", "data":""} from: 192.168.1.104:, cost: 59641 ms, unacked: 5, total push: 1
+
+2019-10-10 10:00:53,345 INFO retry to push data, key: 192.168.1.104,50583,3906339509509
+
+2019-10-10 10:00:53,345 WARN max re-push times reached, retry times 2, key: 192.168.1.104,50583,3906339509509
+
+2019-10-10 10:00:56,694 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:00:56,694 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3929698814756
+
+2019-10-10 10:00:56,694 INFO send udp packet: 192.168.1.104,50071,3929698814756
+
+2019-10-10 10:00:56,697 INFO received ack: {"type": "push-ack", "lastRefTime":"3929698814756", "data":""} from: 192.168.1.104:, cost: 50071 ms, unacked: 3, total push: 0
+
+2019-10-10 10:01:11,964 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 10:01:11,964 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3944968775210
+
+2019-10-10 10:01:11,964 INFO send udp packet: 192.168.1.104,50071,3944968775210
+
+2019-10-10 10:01:17,378 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 10:01:17,378 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:56093, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,56093,3950382556838
+
+2019-10-10 10:01:17,378 INFO send udp packet: 192.168.1.104,56093,3950382556838
+
+2019-10-10 10:01:17,378 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:50071, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50071,3950382556838
+
+2019-10-10 10:01:17,379 INFO send udp packet: 192.168.1.104,50071,3950382556838
+
+2019-10-10 10:01:17,383 INFO received ack: {"type": "push-ack", "lastRefTime":"3950382556838", "data":""} from: 192.168.1.104:, cost: 56093 ms, unacked: 5, total push: 2
+
+2019-10-10 10:01:21,968 INFO retry to push data, key: 192.168.1.104,50071,3944968775210
+
+2019-10-10 10:01:21,968 INFO send udp packet: 192.168.1.104,50071,3944968775210
+
+2019-10-10 10:01:27,381 INFO retry to push data, key: 192.168.1.104,50071,3950382556838
+
+2019-10-10 10:01:27,382 INFO send udp packet: 192.168.1.104,50071,3950382556838
+
+2019-10-10 10:01:31,971 INFO retry to push data, key: 192.168.1.104,50071,3944968775210
+
+2019-10-10 10:01:31,971 WARN max re-push times reached, retry times 2, key: 192.168.1.104,50071,3944968775210
+
+2019-10-10 10:01:37,385 INFO retry to push data, key: 192.168.1.104,50071,3950382556838
+
+2019-10-10 10:01:37,385 WARN max re-push times reached, retry times 2, key: 192.168.1.104,50071,3950382556838
+
+2019-10-10 10:01:38,951 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:01:38,951 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:53281, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53281,3971955895542
+
+2019-10-10 10:01:38,951 INFO send udp packet: 192.168.1.104,53281,3971955895542
+
+2019-10-10 10:01:38,952 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:56093, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,56093,3971955895542
+
+2019-10-10 10:01:38,952 INFO send udp packet: 192.168.1.104,56093,3971955895542
+
+2019-10-10 10:01:38,953 INFO received ack: {"type": "push-ack", "lastRefTime":"3971955895542", "data":""} from: 192.168.1.104:, cost: 56093 ms, unacked: 1, total push: 1
+
+2019-10-10 10:01:38,955 INFO received ack: {"type": "push-ack", "lastRefTime":"3971955895542", "data":""} from: 192.168.1.104:, cost: 53281 ms, unacked: 4, total push: 0
+
+2019-10-10 10:47:48,200 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 10:47:48,201 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:53281, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53281,6741198380367
+
+2019-10-10 10:47:48,201 INFO send udp packet: 192.168.1.104,53281,6741198380367
+
+2019-10-10 10:47:48,201 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:56093, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,56093,6741198380367
+
+2019-10-10 10:47:48,201 INFO send udp packet: 192.168.1.104,56093,6741198380367
+
+2019-10-10 10:47:48,205 INFO received ack: {"type": "push-ack", "lastRefTime":"6741198380367", "data":""} from: 192.168.1.104:, cost: 53281 ms, unacked: 4, total push: 1
+
+2019-10-10 10:47:55,108 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 10:47:55,108 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:53281, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53281,6748105494761
+
+2019-10-10 10:47:55,108 INFO send udp packet: 192.168.1.104,53281,6748105494761
+
+2019-10-10 10:47:55,108 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:62124, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,62124,6748105494761
+
+2019-10-10 10:47:55,108 INFO send udp packet: 192.168.1.104,62124,6748105494761
+
+2019-10-10 10:47:55,113 INFO received ack: {"type": "push-ack", "lastRefTime":"6748105494761", "data":""} from: 192.168.1.104:, cost: 53281 ms, unacked: 5, total push: 2
+
+2019-10-10 10:47:55,114 INFO received ack: {"type": "push-ack", "lastRefTime":"6748105494761", "data":""} from: 192.168.1.104:, cost: 62124 ms, unacked: 6, total push: 1
+
+2019-10-10 10:47:58,201 INFO retry to push data, key: 192.168.1.104,56093,6741198380367
+
+2019-10-10 10:47:58,201 INFO send udp packet: 192.168.1.104,56093,6741198380367
+
+2019-10-10 10:47:58,384 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:47:58,384 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:53281, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53281,6751381352066
+
+2019-10-10 10:47:58,384 INFO send udp packet: 192.168.1.104,53281,6751381352066
+
+2019-10-10 10:47:58,384 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:62124, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,62124,6751381352066
+
+2019-10-10 10:47:58,384 INFO send udp packet: 192.168.1.104,62124,6751381352066
+
+2019-10-10 10:47:58,387 INFO received ack: {"type": "push-ack", "lastRefTime":"6751381352066", "data":""} from: 192.168.1.104:, cost: 62124 ms, unacked: 3, total push: 2
+
+2019-10-10 10:48:08,203 INFO retry to push data, key: 192.168.1.104,56093,6741198380367
+
+2019-10-10 10:48:08,203 WARN max re-push times reached, retry times 2, key: 192.168.1.104,56093,6741198380367
+
+2019-10-10 10:48:08,384 INFO retry to push data, key: 192.168.1.104,53281,6751381352066
+
+2019-10-10 10:48:08,384 INFO send udp packet: 192.168.1.104,53281,6751381352066
+
+2019-10-10 10:48:18,387 INFO retry to push data, key: 192.168.1.104,53281,6751381352066
+
+2019-10-10 10:48:18,387 WARN max re-push times reached, retry times 2, key: 192.168.1.104,53281,6751381352066
+
+2019-10-10 10:48:46,404 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:48:46,405 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:60216, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,60216,6799402206453
+
+2019-10-10 10:48:46,405 INFO send udp packet: 192.168.1.104,60216,6799402206453
+
+2019-10-10 10:48:46,405 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:62124, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,62124,6799402206453
+
+2019-10-10 10:48:46,405 INFO send udp packet: 192.168.1.104,62124,6799402206453
+
+2019-10-10 10:48:46,407 INFO received ack: {"type": "push-ack", "lastRefTime":"6799402206453", "data":""} from: 192.168.1.104:, cost: 62124 ms, unacked: 2, total push: 1
+
+2019-10-10 10:48:46,409 INFO received ack: {"type": "push-ack", "lastRefTime":"6799402206453", "data":""} from: 192.168.1.104:, cost: 60216 ms, unacked: 4, total push: 0
+
+2019-10-10 10:50:32,442 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:50:32,443 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:60216, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,60216,6905440077678
+
+2019-10-10 10:50:32,443 INFO send udp packet: 192.168.1.104,60216,6905440077678
+
+2019-10-10 10:50:32,443 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:62124, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,62124,6905440077678
+
+2019-10-10 10:50:32,443 INFO send udp packet: 192.168.1.104,62124,6905440077678
+
+2019-10-10 10:50:32,445 INFO received ack: {"type": "push-ack", "lastRefTime":"6905440077678", "data":""} from: 192.168.1.104:, cost: 62124 ms, unacked: 2, total push: 1
+
+2019-10-10 10:50:38,444 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:50:38,445 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:61591, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,61591,6911442473259
+
+2019-10-10 10:50:38,445 INFO send udp packet: 192.168.1.104,61591,6911442473259
+
+2019-10-10 10:50:38,445 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:62124, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,62124,6911442473259
+
+2019-10-10 10:50:38,445 INFO send udp packet: 192.168.1.104,62124,6911442473259
+
+2019-10-10 10:50:38,447 INFO received ack: {"type": "push-ack", "lastRefTime":"6911442473259", "data":""} from: 192.168.1.104:, cost: 62124 ms, unacked: 2, total push: 2
+
+2019-10-10 10:50:38,450 INFO received ack: {"type": "push-ack", "lastRefTime":"6911442473259", "data":""} from: 192.168.1.104:, cost: 61591 ms, unacked: 5, total push: 1
+
+2019-10-10 10:50:42,444 INFO retry to push data, key: 192.168.1.104,60216,6905440077678
+
+2019-10-10 10:50:42,444 INFO send udp packet: 192.168.1.104,60216,6905440077678
+
+2019-10-10 10:50:52,449 INFO retry to push data, key: 192.168.1.104,60216,6905440077678
+
+2019-10-10 10:50:52,451 WARN max re-push times reached, retry times 2, key: 192.168.1.104,60216,6905440077678
+
+2019-10-10 10:53:52,036 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 10:53:52,036 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:62124, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,62124,7105033279622
+
+2019-10-10 10:53:52,036 INFO send udp packet: 192.168.1.104,62124,7105033279622
+
+2019-10-10 10:53:52,036 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:61591, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,61591,7105033279622
+
+2019-10-10 10:53:52,036 INFO send udp packet: 192.168.1.104,61591,7105033279622
+
+2019-10-10 10:53:52,039 INFO received ack: {"type": "push-ack", "lastRefTime":"7105033279622", "data":""} from: 192.168.1.104:, cost: 61591 ms, unacked: 3, total push: 1
+
+2019-10-10 10:53:54,479 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:53:54,480 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:61591, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,61591,7107477005878
+
+2019-10-10 10:53:54,480 INFO send udp packet: 192.168.1.104,61591,7107477005878
+
+2019-10-10 10:53:54,480 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:62124, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,62124,7107477005878
+
+2019-10-10 10:53:54,480 INFO send udp packet: 192.168.1.104,62124,7107477005878
+
+2019-10-10 10:53:58,592 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 10:53:58,592 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:51489, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51489,7111589476365
+
+2019-10-10 10:53:58,592 INFO send udp packet: 192.168.1.104,51489,7111589476365
+
+2019-10-10 10:53:58,598 INFO received ack: {"type": "push-ack", "lastRefTime":"7111589476365", "data":""} from: 192.168.1.104:, cost: 51489 ms, unacked: 5, total push: 3
+
+2019-10-10 10:54:00,572 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:54:00,573 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:52541, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,52541,7113569825854
+
+2019-10-10 10:54:00,573 INFO send udp packet: 192.168.1.104,52541,7113569825854
+
+2019-10-10 10:54:00,573 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51489, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51489,7113569825854
+
+2019-10-10 10:54:00,573 INFO send udp packet: 192.168.1.104,51489,7113569825854
+
+2019-10-10 10:54:00,576 INFO received ack: {"type": "push-ack", "lastRefTime":"7113569825854", "data":""} from: 192.168.1.104:, cost: 51489 ms, unacked: 3, total push: 4
+
+2019-10-10 10:54:00,580 INFO received ack: {"type": "push-ack", "lastRefTime":"7113569825854", "data":""} from: 192.168.1.104:, cost: 52541 ms, unacked: 7, total push: 3
+
+2019-10-10 10:54:02,037 INFO retry to push data, key: 192.168.1.104,62124,7105033279622
+
+2019-10-10 10:54:02,037 INFO send udp packet: 192.168.1.104,62124,7105033279622
+
+2019-10-10 10:54:04,484 INFO retry to push data, key: 192.168.1.104,61591,7107477005878
+
+2019-10-10 10:54:04,484 INFO send udp packet: 192.168.1.104,61591,7107477005878
+
+2019-10-10 10:54:04,485 INFO retry to push data, key: 192.168.1.104,62124,7107477005878
+
+2019-10-10 10:54:04,485 INFO send udp packet: 192.168.1.104,62124,7107477005878
+
+2019-10-10 10:54:12,042 INFO retry to push data, key: 192.168.1.104,62124,7105033279622
+
+2019-10-10 10:54:12,043 WARN max re-push times reached, retry times 2, key: 192.168.1.104,62124,7105033279622
+
+2019-10-10 10:54:14,487 INFO retry to push data, key: 192.168.1.104,61591,7107477005878
+
+2019-10-10 10:54:14,487 WARN max re-push times reached, retry times 2, key: 192.168.1.104,61591,7107477005878
+
+2019-10-10 10:54:14,487 INFO retry to push data, key: 192.168.1.104,62124,7107477005878
+
+2019-10-10 10:54:14,487 WARN max re-push times reached, retry times 2, key: 192.168.1.104,62124,7107477005878
+
+2019-10-10 10:55:34,378 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:55:34,378 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:52541, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,52541,7207375142691
+
+2019-10-10 10:55:34,378 INFO send udp packet: 192.168.1.104,52541,7207375142691
+
+2019-10-10 10:55:34,378 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51489, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51489,7207375142691
+
+2019-10-10 10:55:34,378 INFO send udp packet: 192.168.1.104,51489,7207375142691
+
+2019-10-10 10:55:34,381 INFO received ack: {"type": "push-ack", "lastRefTime":"7207375142691", "data":""} from: 192.168.1.104:, cost: 51489 ms, unacked: 3, total push: 1
+
+2019-10-10 10:55:39,609 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:55:39,609 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:55095, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,55095,7212606146518
+
+2019-10-10 10:55:39,609 INFO send udp packet: 192.168.1.104,55095,7212606146518
+
+2019-10-10 10:55:39,610 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:52541, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,52541,7212606146518
+
+2019-10-10 10:55:39,610 INFO send udp packet: 192.168.1.104,52541,7212606146518
+
+2019-10-10 10:55:39,610 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51489, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51489,7212606146518
+
+2019-10-10 10:55:39,610 INFO send udp packet: 192.168.1.104,51489,7212606146518
+
+2019-10-10 10:55:39,612 INFO received ack: {"type": "push-ack", "lastRefTime":"7212606146518", "data":""} from: 192.168.1.104:, cost: 51489 ms, unacked: 2, total push: 3
+
+2019-10-10 10:55:39,615 INFO received ack: {"type": "push-ack", "lastRefTime":"7212606146518", "data":""} from: 192.168.1.104:, cost: 55095 ms, unacked: 6, total push: 2
+
+2019-10-10 10:55:44,382 INFO retry to push data, key: 192.168.1.104,52541,7207375142691
+
+2019-10-10 10:55:44,383 INFO send udp packet: 192.168.1.104,52541,7207375142691
+
+2019-10-10 10:55:49,614 INFO retry to push data, key: 192.168.1.104,52541,7212606146518
+
+2019-10-10 10:55:49,614 INFO send udp packet: 192.168.1.104,52541,7212606146518
+
+2019-10-10 10:55:54,386 INFO retry to push data, key: 192.168.1.104,52541,7207375142691
+
+2019-10-10 10:55:54,386 WARN max re-push times reached, retry times 2, key: 192.168.1.104,52541,7207375142691
+
+2019-10-10 10:55:59,620 INFO retry to push data, key: 192.168.1.104,52541,7212606146518
+
+2019-10-10 10:55:59,620 WARN max re-push times reached, retry times 2, key: 192.168.1.104,52541,7212606146518
+
+2019-10-10 10:56:01,789 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:56:01,790 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:55095, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,55095,7234786704913
+
+2019-10-10 10:56:01,790 INFO send udp packet: 192.168.1.104,55095,7234786704913
+
+2019-10-10 10:56:01,790 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51489, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51489,7234786704913
+
+2019-10-10 10:56:01,790 INFO send udp packet: 192.168.1.104,51489,7234786704913
+
+2019-10-10 10:56:01,792 INFO received ack: {"type": "push-ack", "lastRefTime":"7234786704913", "data":""} from: 192.168.1.104:, cost: 51489 ms, unacked: 2, total push: 1
+
+2019-10-10 10:56:06,015 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:56:06,015 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:55095, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,55095,7239011804237
+
+2019-10-10 10:56:06,015 INFO send udp packet: 192.168.1.104,55095,7239011804237
+
+2019-10-10 10:56:06,015 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:53509, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53509,7239011804237
+
+2019-10-10 10:56:06,015 INFO send udp packet: 192.168.1.104,53509,7239011804237
+
+2019-10-10 10:56:06,015 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51489, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51489,7239011804237
+
+2019-10-10 10:56:06,015 INFO send udp packet: 192.168.1.104,51489,7239011804237
+
+2019-10-10 10:56:06,017 INFO received ack: {"type": "push-ack", "lastRefTime":"7239011804237", "data":""} from: 192.168.1.104:, cost: 51489 ms, unacked: 2, total push: 3
+
+2019-10-10 10:56:06,020 INFO received ack: {"type": "push-ack", "lastRefTime":"7239011804237", "data":""} from: 192.168.1.104:, cost: 53509 ms, unacked: 5, total push: 2
+
+2019-10-10 10:56:10,824 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 10:56:10,824 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:51489, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51489,7243821054542
+
+2019-10-10 10:56:10,824 INFO send udp packet: 192.168.1.104,51489,7243821054542
+
+2019-10-10 10:56:10,824 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:53509, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53509,7243821054542
+
+2019-10-10 10:56:10,824 INFO send udp packet: 192.168.1.104,53509,7243821054542
+
+2019-10-10 10:56:10,827 INFO received ack: {"type": "push-ack", "lastRefTime":"7243821054542", "data":""} from: 192.168.1.104:, cost: 53509 ms, unacked: 3, total push: 3
+
+2019-10-10 10:56:11,794 INFO retry to push data, key: 192.168.1.104,55095,7234786704913
+
+2019-10-10 10:56:11,794 INFO send udp packet: 192.168.1.104,55095,7234786704913
+
+2019-10-10 10:56:15,270 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 10:56:15,271 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:63689, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63689,7248267681175
+
+2019-10-10 10:56:15,271 INFO send udp packet: 192.168.1.104,63689,7248267681175
+
+2019-10-10 10:56:15,271 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:51489, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51489,7248267681175
+
+2019-10-10 10:56:15,271 INFO send udp packet: 192.168.1.104,51489,7248267681175
+
+2019-10-10 10:56:15,271 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:53509, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53509,7248267681175
+
+2019-10-10 10:56:15,271 INFO send udp packet: 192.168.1.104,53509,7248267681175
+
+2019-10-10 10:56:15,273 INFO received ack: {"type": "push-ack", "lastRefTime":"7248267681175", "data":""} from: 192.168.1.104:, cost: 53509 ms, unacked: 2, total push: 5
+
+2019-10-10 10:56:15,275 INFO received ack: {"type": "push-ack", "lastRefTime":"7248267681175", "data":""} from: 192.168.1.104:, cost: 63689 ms, unacked: 4, total push: 4
+
+2019-10-10 10:56:16,020 INFO retry to push data, key: 192.168.1.104,55095,7239011804237
+
+2019-10-10 10:56:16,020 INFO send udp packet: 192.168.1.104,55095,7239011804237
+
+2019-10-10 10:56:20,829 INFO retry to push data, key: 192.168.1.104,51489,7243821054542
+
+2019-10-10 10:56:20,829 INFO send udp packet: 192.168.1.104,51489,7243821054542
+
+2019-10-10 10:56:21,797 INFO retry to push data, key: 192.168.1.104,55095,7234786704913
+
+2019-10-10 10:56:21,797 WARN max re-push times reached, retry times 2, key: 192.168.1.104,55095,7234786704913
+
+2019-10-10 10:56:25,274 INFO retry to push data, key: 192.168.1.104,51489,7248267681175
+
+2019-10-10 10:56:25,274 INFO send udp packet: 192.168.1.104,51489,7248267681175
+
+2019-10-10 10:56:26,022 INFO retry to push data, key: 192.168.1.104,55095,7239011804237
+
+2019-10-10 10:56:26,022 WARN max re-push times reached, retry times 2, key: 192.168.1.104,55095,7239011804237
+
+2019-10-10 10:56:30,833 INFO retry to push data, key: 192.168.1.104,51489,7243821054542
+
+2019-10-10 10:56:30,833 WARN max re-push times reached, retry times 2, key: 192.168.1.104,51489,7243821054542
+
+2019-10-10 10:56:35,277 INFO retry to push data, key: 192.168.1.104,51489,7248267681175
+
+2019-10-10 10:56:35,277 WARN max re-push times reached, retry times 2, key: 192.168.1.104,51489,7248267681175
+
+2019-10-10 10:59:26,063 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:59:26,063 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:63689, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63689,7439059861067
+
+2019-10-10 10:59:26,063 INFO send udp packet: 192.168.1.104,63689,7439059861067
+
+2019-10-10 10:59:26,063 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:53509, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53509,7439059861067
+
+2019-10-10 10:59:26,063 INFO send udp packet: 192.168.1.104,53509,7439059861067
+
+2019-10-10 10:59:26,064 INFO received ack: {"type": "push-ack", "lastRefTime":"7439059861067", "data":""} from: 192.168.1.104:, cost: 63689 ms, unacked: 1, total push: 1
+
+2019-10-10 10:59:31,928 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 10:59:31,928 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:63689, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63689,7444925176737
+
+2019-10-10 10:59:31,929 INFO send udp packet: 192.168.1.104,63689,7444925176737
+
+2019-10-10 10:59:31,929 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:52028, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,52028,7444925176737
+
+2019-10-10 10:59:31,929 INFO send udp packet: 192.168.1.104,52028,7444925176737
+
+2019-10-10 10:59:31,931 INFO received ack: {"type": "push-ack", "lastRefTime":"7444925176737", "data":""} from: 192.168.1.104:, cost: 63689 ms, unacked: 2, total push: 2
+
+2019-10-10 10:59:31,934 INFO received ack: {"type": "push-ack", "lastRefTime":"7444925176737", "data":""} from: 192.168.1.104:, cost: 52028 ms, unacked: 5, total push: 1
+
+2019-10-10 10:59:36,064 INFO retry to push data, key: 192.168.1.104,53509,7439059861067
+
+2019-10-10 10:59:36,064 INFO send udp packet: 192.168.1.104,53509,7439059861067
+
+2019-10-10 10:59:46,068 INFO retry to push data, key: 192.168.1.104,53509,7439059861067
+
+2019-10-10 10:59:46,068 WARN max re-push times reached, retry times 2, key: 192.168.1.104,53509,7439059861067
+
+2019-10-10 11:00:19,566 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 11:00:19,567 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:63689, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63689,7492563849542
+
+2019-10-10 11:00:19,567 INFO send udp packet: 192.168.1.104,63689,7492563849542
+
+2019-10-10 11:00:19,567 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:52028, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,52028,7492563849542
+
+2019-10-10 11:00:19,567 INFO send udp packet: 192.168.1.104,52028,7492563849542
+
+2019-10-10 11:00:19,569 INFO received ack: {"type": "push-ack", "lastRefTime":"7492563849542", "data":""} from: 192.168.1.104:, cost: 63689 ms, unacked: 2, total push: 1
+
+2019-10-10 11:00:23,996 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 11:00:23,996 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:63689, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63689,7496993315790
+
+2019-10-10 11:00:23,997 INFO send udp packet: 192.168.1.104,63689,7496993315790
+
+2019-10-10 11:00:23,997 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:52812, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,52812,7496993315790
+
+2019-10-10 11:00:23,997 INFO send udp packet: 192.168.1.104,52812,7496993315790
+
+2019-10-10 11:00:23,999 INFO received ack: {"type": "push-ack", "lastRefTime":"7496993315790", "data":""} from: 192.168.1.104:, cost: 63689 ms, unacked: 2, total push: 2
+
+2019-10-10 11:00:24,002 INFO received ack: {"type": "push-ack", "lastRefTime":"7496993315790", "data":""} from: 192.168.1.104:, cost: 52812 ms, unacked: 5, total push: 1
+
+2019-10-10 11:00:29,571 INFO retry to push data, key: 192.168.1.104,52028,7492563849542
+
+2019-10-10 11:00:29,571 INFO send udp packet: 192.168.1.104,52028,7492563849542
+
+2019-10-10 11:00:39,576 INFO retry to push data, key: 192.168.1.104,52028,7492563849542
+
+2019-10-10 11:00:39,576 WARN max re-push times reached, retry times 2, key: 192.168.1.104,52028,7492563849542
+
+2019-10-10 11:56:16,385 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 11:56:16,386 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:63689, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63689,10849378342902
+
+2019-10-10 11:56:16,386 INFO send udp packet: 192.168.1.104,63689,10849378342902
+
+2019-10-10 11:56:16,388 INFO received ack: {"type": "push-ack", "lastRefTime":"10849378342902", "data":""} from: 192.168.1.104:, cost: 63689 ms, unacked: 2, total push: 0
+
+2019-10-10 11:56:25,094 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 11:56:25,094 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:63689, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63689,10858086622267
+
+2019-10-10 11:56:25,094 INFO send udp packet: 192.168.1.104,63689,10858086622267
+
+2019-10-10 11:56:25,094 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,10858086622267
+
+2019-10-10 11:56:25,094 INFO send udp packet: 192.168.1.104,59189,10858086622267
+
+2019-10-10 11:56:25,097 INFO received ack: {"type": "push-ack", "lastRefTime":"10858086622267", "data":""} from: 192.168.1.104:, cost: 63689 ms, unacked: 3, total push: 1
+
+2019-10-10 11:56:25,099 INFO received ack: {"type": "push-ack", "lastRefTime":"10858086622267", "data":""} from: 192.168.1.104:, cost: 59189 ms, unacked: 5, total push: 0
+
+2019-10-10 11:56:35,260 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 11:56:35,261 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:63689, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63689,10868252744746
+
+2019-10-10 11:56:35,261 INFO send udp packet: 192.168.1.104,63689,10868252744746
+
+2019-10-10 11:56:35,261 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,10868252744746
+
+2019-10-10 11:56:35,261 INFO send udp packet: 192.168.1.104,59189,10868252744746
+
+2019-10-10 11:56:35,262 INFO received ack: {"type": "push-ack", "lastRefTime":"10868252744746", "data":""} from: 192.168.1.104:, cost: 59189 ms, unacked: 1, total push: 1
+
+2019-10-10 11:56:41,949 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 11:56:41,949 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,10874940813144
+
+2019-10-10 11:56:41,949 INFO send udp packet: 192.168.1.104,59189,10874940813144
+
+2019-10-10 11:56:41,949 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:53058, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53058,10874940813144
+
+2019-10-10 11:56:41,949 INFO send udp packet: 192.168.1.104,53058,10874940813144
+
+2019-10-10 11:56:41,951 INFO received ack: {"type": "push-ack", "lastRefTime":"10874940813144", "data":""} from: 192.168.1.104:, cost: 59189 ms, unacked: 2, total push: 2
+
+2019-10-10 11:56:41,953 INFO received ack: {"type": "push-ack", "lastRefTime":"10874940813144", "data":""} from: 192.168.1.104:, cost: 53058 ms, unacked: 4, total push: 1
+
+2019-10-10 11:56:45,264 INFO retry to push data, key: 192.168.1.104,63689,10868252744746
+
+2019-10-10 11:56:45,264 INFO send udp packet: 192.168.1.104,63689,10868252744746
+
+2019-10-10 11:56:55,267 INFO retry to push data, key: 192.168.1.104,63689,10868252744746
+
+2019-10-10 11:56:55,267 WARN max re-push times reached, retry times 2, key: 192.168.1.104,63689,10868252744746
+
+2019-10-10 12:16:15,250 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 12:16:15,250 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,12048240123129
+
+2019-10-10 12:16:15,250 INFO send udp packet: 192.168.1.104,59189,12048240123129
+
+2019-10-10 12:16:15,250 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:53058, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53058,12048240123129
+
+2019-10-10 12:16:15,250 INFO send udp packet: 192.168.1.104,53058,12048240123129
+
+2019-10-10 12:16:15,252 INFO received ack: {"type": "push-ack", "lastRefTime":"12048240123129", "data":""} from: 192.168.1.104:, cost: 59189 ms, unacked: 2, total push: 1
+
+2019-10-10 12:16:22,431 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 12:16:22,433 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,12055423181929
+
+2019-10-10 12:16:22,433 INFO send udp packet: 192.168.1.104,59189,12055423181929
+
+2019-10-10 12:16:22,433 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:50585, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50585,12055423181929
+
+2019-10-10 12:16:22,433 INFO send udp packet: 192.168.1.104,50585,12055423181929
+
+2019-10-10 12:16:22,434 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:53058, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53058,12055423181929
+
+2019-10-10 12:16:22,434 INFO send udp packet: 192.168.1.104,53058,12055423181929
+
+2019-10-10 12:16:22,435 INFO received ack: {"type": "push-ack", "lastRefTime":"12055423181929", "data":""} from: 192.168.1.104:, cost: 59189 ms, unacked: 2, total push: 3
+
+2019-10-10 12:16:22,439 INFO received ack: {"type": "push-ack", "lastRefTime":"12055423181929", "data":""} from: 192.168.1.104:, cost: 50585 ms, unacked: 6, total push: 2
+
+2019-10-10 12:16:25,251 INFO retry to push data, key: 192.168.1.104,53058,12048240123129
+
+2019-10-10 12:16:25,251 INFO send udp packet: 192.168.1.104,53058,12048240123129
+
+2019-10-10 12:16:32,434 INFO retry to push data, key: 192.168.1.104,53058,12055423181929
+
+2019-10-10 12:16:32,436 INFO send udp packet: 192.168.1.104,53058,12055423181929
+
+2019-10-10 12:16:35,254 INFO retry to push data, key: 192.168.1.104,53058,12048240123129
+
+2019-10-10 12:16:35,254 WARN max re-push times reached, retry times 2, key: 192.168.1.104,53058,12048240123129
+
+2019-10-10 12:16:41,755 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 12:16:41,755 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,12074745291873
+
+2019-10-10 12:16:41,755 INFO send udp packet: 192.168.1.104,59189,12074745291873
+
+2019-10-10 12:16:41,756 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:50585, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50585,12074745291873
+
+2019-10-10 12:16:41,756 INFO send udp packet: 192.168.1.104,50585,12074745291873
+
+2019-10-10 12:16:41,757 INFO received ack: {"type": "push-ack", "lastRefTime":"12074745291873", "data":""} from: 192.168.1.104:, cost: 59189 ms, unacked: 2, total push: 2
+
+2019-10-10 12:16:42,440 INFO retry to push data, key: 192.168.1.104,53058,12055423181929
+
+2019-10-10 12:16:42,441 WARN max re-push times reached, retry times 2, key: 192.168.1.104,53058,12055423181929
+
+2019-10-10 12:16:45,157 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 12:16:45,158 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,12078147394427
+
+2019-10-10 12:16:45,158 INFO send udp packet: 192.168.1.104,59189,12078147394427
+
+2019-10-10 12:16:45,158 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:50586, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50586,12078147394427
+
+2019-10-10 12:16:45,158 INFO send udp packet: 192.168.1.104,50586,12078147394427
+
+2019-10-10 12:16:45,160 INFO received ack: {"type": "push-ack", "lastRefTime":"12078147394427", "data":""} from: 192.168.1.104:, cost: 59189 ms, unacked: 2, total push: 2
+
+2019-10-10 12:16:45,163 INFO received ack: {"type": "push-ack", "lastRefTime":"12078147394427", "data":""} from: 192.168.1.104:, cost: 50586 ms, unacked: 5, total push: 1
+
+2019-10-10 12:16:51,757 INFO retry to push data, key: 192.168.1.104,50585,12074745291873
+
+2019-10-10 12:16:51,758 INFO send udp packet: 192.168.1.104,50585,12074745291873
+
+2019-10-10 12:17:01,763 INFO retry to push data, key: 192.168.1.104,50585,12074745291873
+
+2019-10-10 12:17:01,763 WARN max re-push times reached, retry times 2, key: 192.168.1.104,50585,12074745291873
+
+2019-10-10 12:19:20,489 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 12:19:20,490 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,12233479214398
+
+2019-10-10 12:19:20,490 INFO send udp packet: 192.168.1.104,59189,12233479214398
+
+2019-10-10 12:19:20,490 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:50586, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,50586,12233479214398
+
+2019-10-10 12:19:20,490 INFO send udp packet: 192.168.1.104,50586,12233479214398
+
+2019-10-10 12:19:20,492 INFO received ack: {"type": "push-ack", "lastRefTime":"12233479214398", "data":""} from: 192.168.1.104:, cost: 59189 ms, unacked: 2, total push: 1
+
+2019-10-10 12:19:25,798 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 12:19:25,798 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,12238787939301
+
+2019-10-10 12:19:25,799 INFO send udp packet: 192.168.1.104,59189,12238787939301
+
+2019-10-10 12:19:25,799 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:57111, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57111,12238787939301
+
+2019-10-10 12:19:25,799 INFO send udp packet: 192.168.1.104,57111,12238787939301
+
+2019-10-10 12:19:25,801 INFO received ack: {"type": "push-ack", "lastRefTime":"12238787939301", "data":""} from: 192.168.1.104:, cost: 59189 ms, unacked: 2, total push: 2
+
+2019-10-10 12:19:25,804 INFO received ack: {"type": "push-ack", "lastRefTime":"12238787939301", "data":""} from: 192.168.1.104:, cost: 57111 ms, unacked: 5, total push: 1
+
+2019-10-10 12:19:30,494 INFO retry to push data, key: 192.168.1.104,50586,12233479214398
+
+2019-10-10 12:19:30,494 INFO send udp packet: 192.168.1.104,50586,12233479214398
+
+2019-10-10 12:19:40,500 INFO retry to push data, key: 192.168.1.104,50586,12233479214398
+
+2019-10-10 12:19:40,500 WARN max re-push times reached, retry times 2, key: 192.168.1.104,50586,12233479214398
+
+2019-10-10 13:54:06,115 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 13:54:06,116 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:57111, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57111,17919096580534
+
+2019-10-10 13:54:06,116 INFO send udp packet: 192.168.1.104,57111,17919096580534
+
+2019-10-10 13:54:06,116 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:59189, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59189,17919096580534
+
+2019-10-10 13:54:06,116 INFO send udp packet: 192.168.1.104,59189,17919096580534
+
+2019-10-10 13:54:06,120 INFO received ack: {"type": "push-ack", "lastRefTime":"17919096580534", "data":""} from: 192.168.1.104:, cost: 57111 ms, unacked: 4, total push: 1
+
+2019-10-10 13:54:14,965 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 13:54:14,965 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:57111, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57111,17927946448919
+
+2019-10-10 13:54:14,965 INFO send udp packet: 192.168.1.104,57111,17927946448919
+
+2019-10-10 13:54:14,966 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:61727, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,61727,17927946448919
+
+2019-10-10 13:54:14,966 INFO send udp packet: 192.168.1.104,61727,17927946448919
+
+2019-10-10 13:54:14,967 INFO received ack: {"type": "push-ack", "lastRefTime":"17927946448919", "data":""} from: 192.168.1.104:, cost: 57111 ms, unacked: 2, total push: 2
+
+2019-10-10 13:54:14,971 INFO received ack: {"type": "push-ack", "lastRefTime":"17927946448919", "data":""} from: 192.168.1.104:, cost: 61727 ms, unacked: 5, total push: 1
+
+2019-10-10 13:54:16,118 INFO retry to push data, key: 192.168.1.104,59189,17919096580534
+
+2019-10-10 13:54:16,118 INFO send udp packet: 192.168.1.104,59189,17919096580534
+
+2019-10-10 13:54:26,119 INFO retry to push data, key: 192.168.1.104,59189,17919096580534
+
+2019-10-10 13:54:26,119 WARN max re-push times reached, retry times 2, key: 192.168.1.104,59189,17919096580534
+
+2019-10-10 13:54:48,204 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 13:54:48,204 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:57111, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57111,17961185447442
+
+2019-10-10 13:54:48,204 INFO send udp packet: 192.168.1.104,57111,17961185447442
+
+2019-10-10 13:54:48,205 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:61727, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,61727,17961185447442
+
+2019-10-10 13:54:48,205 INFO send udp packet: 192.168.1.104,61727,17961185447442
+
+2019-10-10 13:54:48,206 INFO received ack: {"type": "push-ack", "lastRefTime":"17961185447442", "data":""} from: 192.168.1.104:, cost: 57111 ms, unacked: 2, total push: 1
+
+2019-10-10 13:54:56,247 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 13:54:56,247 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:49374, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,49374,17969228490804
+
+2019-10-10 13:54:56,247 INFO send udp packet: 192.168.1.104,49374,17969228490804
+
+2019-10-10 13:54:56,248 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:57111, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57111,17969228490804
+
+2019-10-10 13:54:56,248 INFO send udp packet: 192.168.1.104,57111,17969228490804
+
+2019-10-10 13:54:56,250 INFO received ack: {"type": "push-ack", "lastRefTime":"17969228490804", "data":""} from: 192.168.1.104:, cost: 57111 ms, unacked: 2, total push: 2
+
+2019-10-10 13:54:56,252 INFO received ack: {"type": "push-ack", "lastRefTime":"17969228490804", "data":""} from: 192.168.1.104:, cost: 49374 ms, unacked: 5, total push: 1
+
+2019-10-10 13:54:58,208 INFO retry to push data, key: 192.168.1.104,61727,17961185447442
+
+2019-10-10 13:54:58,208 INFO send udp packet: 192.168.1.104,61727,17961185447442
+
+2019-10-10 13:55:08,212 INFO retry to push data, key: 192.168.1.104,61727,17961185447442
+
+2019-10-10 13:55:08,213 WARN max re-push times reached, retry times 2, key: 192.168.1.104,61727,17961185447442
+
+2019-10-10 13:55:13,774 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 13:55:13,774 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:49374, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,49374,17986755151831
+
+2019-10-10 13:55:13,774 INFO send udp packet: 192.168.1.104,49374,17986755151831
+
+2019-10-10 13:55:13,774 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:57111, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57111,17986755151831
+
+2019-10-10 13:55:13,774 INFO send udp packet: 192.168.1.104,57111,17986755151831
+
+2019-10-10 13:55:13,778 INFO received ack: {"type": "push-ack", "lastRefTime":"17986755151831", "data":""} from: 192.168.1.104:, cost: 49374 ms, unacked: 4, total push: 1
+
+2019-10-10 13:55:18,988 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 13:55:18,989 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59773, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59773,17991969564204
+
+2019-10-10 13:55:18,989 INFO send udp packet: 192.168.1.104,59773,17991969564204
+
+2019-10-10 13:55:18,989 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:49374, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,49374,17991969564204
+
+2019-10-10 13:55:18,989 INFO send udp packet: 192.168.1.104,49374,17991969564204
+
+2019-10-10 13:55:18,989 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:57111, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57111,17991969564204
+
+2019-10-10 13:55:18,989 INFO send udp packet: 192.168.1.104,57111,17991969564204
+
+2019-10-10 13:55:18,991 INFO received ack: {"type": "push-ack", "lastRefTime":"17991969564204", "data":""} from: 192.168.1.104:, cost: 49374 ms, unacked: 2, total push: 3
+
+2019-10-10 13:55:18,993 INFO received ack: {"type": "push-ack", "lastRefTime":"17991969564204", "data":""} from: 192.168.1.104:, cost: 59773 ms, unacked: 4, total push: 2
+
+2019-10-10 13:55:23,778 INFO retry to push data, key: 192.168.1.104,57111,17986755151831
+
+2019-10-10 13:55:23,778 INFO send udp packet: 192.168.1.104,57111,17986755151831
+
+2019-10-10 13:55:28,992 INFO retry to push data, key: 192.168.1.104,57111,17991969564204
+
+2019-10-10 13:55:28,993 INFO send udp packet: 192.168.1.104,57111,17991969564204
+
+2019-10-10 13:55:33,781 INFO retry to push data, key: 192.168.1.104,57111,17986755151831
+
+2019-10-10 13:55:33,782 WARN max re-push times reached, retry times 2, key: 192.168.1.104,57111,17986755151831
+
+2019-10-10 13:55:38,993 INFO retry to push data, key: 192.168.1.104,57111,17991969564204
+
+2019-10-10 13:55:38,994 WARN max re-push times reached, retry times 2, key: 192.168.1.104,57111,17991969564204
+
+2019-10-10 13:56:06,531 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 13:56:06,531 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:59773, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59773,18039512297829
+
+2019-10-10 13:56:06,531 INFO send udp packet: 192.168.1.104,59773,18039512297829
+
+2019-10-10 13:56:06,534 INFO received ack: {"type": "push-ack", "lastRefTime":"18039512297829", "data":""} from: 192.168.1.104:, cost: 59773 ms, unacked: 3, total push: 0
+
+2019-10-10 13:56:12,798 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 13:56:12,798 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:53046, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53046,18045779024391
+
+2019-10-10 13:56:12,798 INFO send udp packet: 192.168.1.104,53046,18045779024391
+
+2019-10-10 13:56:12,798 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:59773, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59773,18045779024391
+
+2019-10-10 13:56:12,798 INFO send udp packet: 192.168.1.104,59773,18045779024391
+
+2019-10-10 13:56:12,801 INFO received ack: {"type": "push-ack", "lastRefTime":"18045779024391", "data":""} from: 192.168.1.104:, cost: 59773 ms, unacked: 3, total push: 1
+
+2019-10-10 13:56:12,802 INFO received ack: {"type": "push-ack", "lastRefTime":"18045779024391", "data":""} from: 192.168.1.104:, cost: 53046 ms, unacked: 4, total push: 0
+
+2019-10-10 14:01:36,667 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 14:01:36,668 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:53046, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,53046,18369648422452
+
+2019-10-10 14:01:36,668 INFO send udp packet: 192.168.1.104,53046,18369648422452
+
+2019-10-10 14:01:36,668 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:59773, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59773,18369648422452
+
+2019-10-10 14:01:36,668 INFO send udp packet: 192.168.1.104,59773,18369648422452
+
+2019-10-10 14:01:36,670 INFO received ack: {"type": "push-ack", "lastRefTime":"18369648422452", "data":""} from: 192.168.1.104:, cost: 59773 ms, unacked: 2, total push: 1
+
+2019-10-10 14:01:46,668 INFO retry to push data, key: 192.168.1.104,53046,18369648422452
+
+2019-10-10 14:01:46,668 INFO send udp packet: 192.168.1.104,53046,18369648422452
+
+2019-10-10 14:01:56,669 INFO retry to push data, key: 192.168.1.104,53046,18369648422452
+
+2019-10-10 14:01:56,669 WARN max re-push times reached, retry times 2, key: 192.168.1.104,53046,18369648422452
+
+2019-10-10 14:06:20,550 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 14:06:20,550 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:59773, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59773,18653530479233
+
+2019-10-10 14:06:20,550 INFO send udp packet: 192.168.1.104,59773,18653530479233
+
+2019-10-10 14:06:20,551 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:54357, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,54357,18653530479233
+
+2019-10-10 14:06:20,551 INFO send udp packet: 192.168.1.104,54357,18653530479233
+
+2019-10-10 14:06:20,552 INFO received ack: {"type": "push-ack", "lastRefTime":"18653530479233", "data":""} from: 192.168.1.104:, cost: 59773 ms, unacked: 2, total push: 1
+
+2019-10-10 14:06:20,554 INFO received ack: {"type": "push-ack", "lastRefTime":"18653530479233", "data":""} from: 192.168.1.104:, cost: 54357 ms, unacked: 3, total push: 0
+
+2019-10-10 14:10:19,770 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 14:10:19,770 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:59773, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59773,18892749891377
+
+2019-10-10 14:10:19,770 INFO send udp packet: 192.168.1.104,59773,18892749891377
+
+2019-10-10 14:10:19,771 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:54357, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,54357,18892749891377
+
+2019-10-10 14:10:19,771 INFO send udp packet: 192.168.1.104,54357,18892749891377
+
+2019-10-10 14:10:19,771 INFO received ack: {"type": "push-ack", "lastRefTime":"18892749891377", "data":""} from: 192.168.1.104:, cost: 59773 ms, unacked: 1, total push: 1
+
+2019-10-10 14:10:28,178 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 14:10:28,179 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:49926, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,49926,18901158348044
+
+2019-10-10 14:10:28,179 INFO send udp packet: 192.168.1.104,49926,18901158348044
+
+2019-10-10 14:10:28,179 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:59773, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59773,18901158348044
+
+2019-10-10 14:10:28,179 INFO send udp packet: 192.168.1.104,59773,18901158348044
+
+2019-10-10 14:10:28,180 INFO received ack: {"type": "push-ack", "lastRefTime":"18901158348044", "data":""} from: 192.168.1.104:, cost: 59773 ms, unacked: 1, total push: 2
+
+2019-10-10 14:10:28,183 INFO received ack: {"type": "push-ack", "lastRefTime":"18901158348044", "data":""} from: 192.168.1.104:, cost: 49926 ms, unacked: 4, total push: 1
+
+2019-10-10 14:10:29,773 INFO retry to push data, key: 192.168.1.104,54357,18892749891377
+
+2019-10-10 14:10:29,773 INFO send udp packet: 192.168.1.104,54357,18892749891377
+
+2019-10-10 14:10:39,776 INFO retry to push data, key: 192.168.1.104,54357,18892749891377
+
+2019-10-10 14:10:39,776 WARN max re-push times reached, retry times 2, key: 192.168.1.104,54357,18892749891377
+
+2019-10-10 14:10:43,933 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 14:10:43,933 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59773, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59773,18916912953981
+
+2019-10-10 14:10:43,933 INFO send udp packet: 192.168.1.104,59773,18916912953981
+
+2019-10-10 14:10:43,933 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:49926, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,49926,18916912953981
+
+2019-10-10 14:10:43,933 INFO send udp packet: 192.168.1.104,49926,18916912953981
+
+2019-10-10 14:10:43,938 INFO received ack: {"type": "push-ack", "lastRefTime":"18916912953981", "data":""} from: 192.168.1.104:, cost: 49926 ms, unacked: 5, total push: 1
+
+2019-10-10 14:10:49,326 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 14:10:49,326 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:59773, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,59773,18922305860252
+
+2019-10-10 14:10:49,326 INFO send udp packet: 192.168.1.104,59773,18922305860252
+
+2019-10-10 14:10:49,326 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,18922305860252
+
+2019-10-10 14:10:49,326 INFO send udp packet: 192.168.1.104,51096,18922305860252
+
+2019-10-10 14:10:49,327 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:49926, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,49926,18922305860252
+
+2019-10-10 14:10:49,327 INFO send udp packet: 192.168.1.104,49926,18922305860252
+
+2019-10-10 14:10:49,329 INFO received ack: {"type": "push-ack", "lastRefTime":"18922305860252", "data":""} from: 192.168.1.104:, cost: 49926 ms, unacked: 2, total push: 3
+
+2019-10-10 14:10:49,331 INFO received ack: {"type": "push-ack", "lastRefTime":"18922305860252", "data":""} from: 192.168.1.104:, cost: 51096 ms, unacked: 5, total push: 2
+
+2019-10-10 14:10:53,935 INFO retry to push data, key: 192.168.1.104,59773,18916912953981
+
+2019-10-10 14:10:53,935 INFO send udp packet: 192.168.1.104,59773,18916912953981
+
+2019-10-10 14:10:59,327 INFO retry to push data, key: 192.168.1.104,59773,18922305860252
+
+2019-10-10 14:10:59,327 INFO send udp packet: 192.168.1.104,59773,18922305860252
+
+2019-10-10 14:11:03,941 INFO retry to push data, key: 192.168.1.104,59773,18916912953981
+
+2019-10-10 14:11:03,941 WARN max re-push times reached, retry times 2, key: 192.168.1.104,59773,18916912953981
+
+2019-10-10 14:11:09,332 INFO retry to push data, key: 192.168.1.104,59773,18922305860252
+
+2019-10-10 14:11:09,332 WARN max re-push times reached, retry times 2, key: 192.168.1.104,59773,18922305860252
+
+2019-10-10 15:19:57,473 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 15:19:57,478 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23070449878988
+
+2019-10-10 15:19:57,478 INFO send udp packet: 192.168.1.104,51096,23070449878988
+
+2019-10-10 15:19:57,478 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:49926, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,49926,23070449878988
+
+2019-10-10 15:19:57,478 INFO send udp packet: 192.168.1.104,49926,23070449878988
+
+2019-10-10 15:19:57,482 INFO received ack: {"type": "push-ack", "lastRefTime":"23070449878988", "data":""} from: 192.168.1.104:, cost: 51096 ms, unacked: 4, total push: 1
+
+2019-10-10 15:20:07,483 INFO retry to push data, key: 192.168.1.104,49926,23070449878988
+
+2019-10-10 15:20:07,483 INFO send udp packet: 192.168.1.104,49926,23070449878988
+
+2019-10-10 15:20:17,483 INFO retry to push data, key: 192.168.1.104,49926,23070449878988
+
+2019-10-10 15:20:17,483 WARN max re-push times reached, retry times 2, key: 192.168.1.104,49926,23070449878988
+
+2019-10-10 15:20:19,237 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 15:20:19,237 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23092209608840
+
+2019-10-10 15:20:19,237 INFO send udp packet: 192.168.1.104,51096,23092209608840
+
+2019-10-10 15:20:19,238 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:65003, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,65003,23092209608840
+
+2019-10-10 15:20:19,238 INFO send udp packet: 192.168.1.104,65003,23092209608840
+
+2019-10-10 15:20:19,239 INFO received ack: {"type": "push-ack", "lastRefTime":"23092209608840", "data":""} from: 192.168.1.104:, cost: 51096 ms, unacked: 2, total push: 1
+
+2019-10-10 15:20:19,242 INFO received ack: {"type": "push-ack", "lastRefTime":"23092209608840", "data":""} from: 192.168.1.104:, cost: 65003 ms, unacked: 4, total push: 0
+
+2019-10-10 15:21:43,979 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 15:21:43,979 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23176950969768
+
+2019-10-10 15:21:43,979 INFO send udp packet: 192.168.1.104,51096,23176950969768
+
+2019-10-10 15:21:43,979 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:65003, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,65003,23176950969768
+
+2019-10-10 15:21:43,979 INFO send udp packet: 192.168.1.104,65003,23176950969768
+
+2019-10-10 15:21:43,981 INFO received ack: {"type": "push-ack", "lastRefTime":"23176950969768", "data":""} from: 192.168.1.104:, cost: 51096 ms, unacked: 2, total push: 1
+
+2019-10-10 15:21:52,405 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 15:21:52,407 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23185378920499
+
+2019-10-10 15:21:52,407 INFO send udp packet: 192.168.1.104,51096,23185378920499
+
+2019-10-10 15:21:52,407 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:62002, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,62002,23185378920499
+
+2019-10-10 15:21:52,407 INFO send udp packet: 192.168.1.104,62002,23185378920499
+
+2019-10-10 15:21:52,408 INFO received ack: {"type": "push-ack", "lastRefTime":"23185378920499", "data":""} from: 192.168.1.104:, cost: 51096 ms, unacked: 1, total push: 2
+
+2019-10-10 15:21:52,411 INFO received ack: {"type": "push-ack", "lastRefTime":"23185378920499", "data":""} from: 192.168.1.104:, cost: 62002 ms, unacked: 4, total push: 1
+
+2019-10-10 15:21:53,981 INFO retry to push data, key: 192.168.1.104,65003,23176950969768
+
+2019-10-10 15:21:53,981 INFO send udp packet: 192.168.1.104,65003,23176950969768
+
+2019-10-10 15:22:03,982 INFO retry to push data, key: 192.168.1.104,65003,23176950969768
+
+2019-10-10 15:22:03,982 WARN max re-push times reached, retry times 2, key: 192.168.1.104,65003,23176950969768
+
+2019-10-10 15:25:20,973 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 15:25:20,973 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23393944900773
+
+2019-10-10 15:25:20,973 INFO send udp packet: 192.168.1.104,51096,23393944900773
+
+2019-10-10 15:25:20,973 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:62002, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,62002,23393944900773
+
+2019-10-10 15:25:20,974 INFO send udp packet: 192.168.1.104,62002,23393944900773
+
+2019-10-10 15:25:20,975 INFO received ack: {"type": "push-ack", "lastRefTime":"23393944900773", "data":""} from: 192.168.1.104:, cost: 51096 ms, unacked: 2, total push: 1
+
+2019-10-10 15:25:27,560 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 15:25:27,561 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23400532347793
+
+2019-10-10 15:25:27,561 INFO send udp packet: 192.168.1.104,51096,23400532347793
+
+2019-10-10 15:25:27,561 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:52527, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,52527,23400532347793
+
+2019-10-10 15:25:27,561 INFO send udp packet: 192.168.1.104,52527,23400532347793
+
+2019-10-10 15:25:27,562 INFO received ack: {"type": "push-ack", "lastRefTime":"23400532347793", "data":""} from: 192.168.1.104:, cost: 51096 ms, unacked: 1, total push: 2
+
+2019-10-10 15:25:27,564 INFO received ack: {"type": "push-ack", "lastRefTime":"23400532347793", "data":""} from: 192.168.1.104:, cost: 52527 ms, unacked: 3, total push: 1
+
+2019-10-10 15:25:30,974 INFO retry to push data, key: 192.168.1.104,62002,23393944900773
+
+2019-10-10 15:25:30,974 INFO send udp packet: 192.168.1.104,62002,23393944900773
+
+2019-10-10 15:25:40,978 INFO retry to push data, key: 192.168.1.104,62002,23393944900773
+
+2019-10-10 15:25:40,978 WARN max re-push times reached, retry times 2, key: 192.168.1.104,62002,23393944900773
+
+2019-10-10 15:25:55,982 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 15:25:55,982 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23428953729073
+
+2019-10-10 15:25:55,982 INFO send udp packet: 192.168.1.104,51096,23428953729073
+
+2019-10-10 15:25:55,982 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:52527, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,52527,23428953729073
+
+2019-10-10 15:25:55,982 INFO send udp packet: 192.168.1.104,52527,23428953729073
+
+2019-10-10 15:25:55,984 INFO received ack: {"type": "push-ack", "lastRefTime":"23428953729073", "data":""} from: 192.168.1.104:, cost: 51096 ms, unacked: 2, total push: 1
+
+2019-10-10 15:26:01,191 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 15:26:01,191 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23434162485616
+
+2019-10-10 15:26:01,191 INFO send udp packet: 192.168.1.104,51096,23434162485616
+
+2019-10-10 15:26:01,191 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:57081, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57081,23434162485616
+
+2019-10-10 15:26:01,191 INFO send udp packet: 192.168.1.104,57081,23434162485616
+
+2019-10-10 15:26:01,193 INFO received ack: {"type": "push-ack", "lastRefTime":"23434162485616", "data":""} from: 192.168.1.104:, cost: 51096 ms, unacked: 2, total push: 2
+
+2019-10-10 15:26:01,196 INFO received ack: {"type": "push-ack", "lastRefTime":"23434162485616", "data":""} from: 192.168.1.104:, cost: 57081 ms, unacked: 5, total push: 1
+
+2019-10-10 15:26:05,985 INFO retry to push data, key: 192.168.1.104,52527,23428953729073
+
+2019-10-10 15:26:05,985 INFO send udp packet: 192.168.1.104,52527,23428953729073
+
+2019-10-10 15:26:13,712 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 15:26:13,712 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:57081, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57081,23446684006472
+
+2019-10-10 15:26:13,712 INFO send udp packet: 192.168.1.104,57081,23446684006472
+
+2019-10-10 15:26:13,713 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23446684006472
+
+2019-10-10 15:26:13,713 INFO send udp packet: 192.168.1.104,51096,23446684006472
+
+2019-10-10 15:26:13,717 INFO received ack: {"type": "push-ack", "lastRefTime":"23446684006472", "data":""} from: 192.168.1.104:, cost: 57081 ms, unacked: 5, total push: 2
+
+2019-10-10 15:26:15,988 INFO retry to push data, key: 192.168.1.104,52527,23428953729073
+
+2019-10-10 15:26:16,000 WARN max re-push times reached, retry times 2, key: 192.168.1.104,52527,23428953729073
+
+2019-10-10 15:26:18,616 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 15:26:18,616 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:58925, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,58925,23451587584481
+
+2019-10-10 15:26:18,616 INFO send udp packet: 192.168.1.104,58925,23451587584481
+
+2019-10-10 15:26:18,617 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:57081, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57081,23451587584481
+
+2019-10-10 15:26:18,617 INFO send udp packet: 192.168.1.104,57081,23451587584481
+
+2019-10-10 15:26:18,617 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:51096, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,51096,23451587584481
+
+2019-10-10 15:26:18,617 INFO send udp packet: 192.168.1.104,51096,23451587584481
+
+2019-10-10 15:26:18,620 INFO received ack: {"type": "push-ack", "lastRefTime":"23451587584481", "data":""} from: 192.168.1.104:, cost: 57081 ms, unacked: 3, total push: 3
+
+2019-10-10 15:26:18,621 INFO received ack: {"type": "push-ack", "lastRefTime":"23451587584481", "data":""} from: 192.168.1.104:, cost: 58925 ms, unacked: 5, total push: 2
+
+2019-10-10 15:26:23,713 INFO retry to push data, key: 192.168.1.104,51096,23446684006472
+
+2019-10-10 15:26:23,713 INFO send udp packet: 192.168.1.104,51096,23446684006472
+
+2019-10-10 15:26:28,618 INFO retry to push data, key: 192.168.1.104,51096,23451587584481
+
+2019-10-10 15:26:28,621 INFO send udp packet: 192.168.1.104,51096,23451587584481
+
+2019-10-10 15:26:33,718 INFO retry to push data, key: 192.168.1.104,51096,23446684006472
+
+2019-10-10 15:26:33,718 WARN max re-push times reached, retry times 2, key: 192.168.1.104,51096,23446684006472
+
+2019-10-10 15:26:38,623 INFO retry to push data, key: 192.168.1.104,51096,23451587584481
+
+2019-10-10 15:26:38,623 WARN max re-push times reached, retry times 2, key: 192.168.1.104,51096,23451587584481
+
+2019-10-10 15:43:50,136 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 15:43:50,137 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:57081, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57081,24503106214962
+
+2019-10-10 15:43:50,137 INFO send udp packet: 192.168.1.104,57081,24503106214962
+
+2019-10-10 15:43:50,139 INFO received ack: {"type": "push-ack", "lastRefTime":"24503106214962", "data":""} from: 192.168.1.104:, cost: 57081 ms, unacked: 2, total push: 0
+
+2019-10-10 15:43:56,167 INFO DEFAULT_GROUP@@yuanqi-service-provider is changed, add it to push queue.
+
+2019-10-10 15:43:56,167 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-provider changed, schedule push for: 192.168.1.104:57081, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,57081,24509136278682
+
+2019-10-10 15:43:56,167 INFO send udp packet: 192.168.1.104,57081,24509136278682
+
+2019-10-10 15:44:06,170 INFO retry to push data, key: 192.168.1.104,57081,24509136278682
+
+2019-10-10 15:44:06,170 INFO send udp packet: 192.168.1.104,57081,24509136278682
+
+2019-10-10 15:44:16,175 INFO retry to push data, key: 192.168.1.104,57081,24509136278682
+
+2019-10-10 15:44:16,175 WARN max re-push times reached, retry times 2, key: 192.168.1.104,57081,24509136278682
+
+2019-10-10 18:00:32,293 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 18:00:32,299 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:63636, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63636,32705255944491
+
+2019-10-10 18:00:32,299 INFO send udp packet: 192.168.1.104,63636,32705255944491
+
+2019-10-10 18:00:32,304 INFO received ack: {"type": "push-ack", "lastRefTime":"32705255944491", "data":""} from: 192.168.1.104:, cost: 63636 ms, unacked: 5, total push: 0
+
+2019-10-10 18:02:46,693 INFO DEFAULT_GROUP@@yuanqi-service-consumer is changed, add it to push queue.
+
+2019-10-10 18:02:46,693 INFO serviceName: DEFAULT_GROUP@@yuanqi-service-consumer changed, schedule push for: 192.168.1.104:63636, agent: Nacos-Java-Client:v1.0.0, key: 192.168.1.104,63636,32839649749148
+
+2019-10-10 18:02:46,693 INFO send udp packet: 192.168.1.104,63636,32839649749148
+
+2019-10-10 18:02:56,695 INFO retry to push data, key: 192.168.1.104,63636,32839649749148
+
+2019-10-10 18:02:56,695 INFO send udp packet: 192.168.1.104,63636,32839649749148
+
+2019-10-10 18:03:06,699 INFO retry to push data, key: 192.168.1.104,63636,32839649749148
+
+2019-10-10 18:03:06,700 WARN max re-push times reached, retry times 2, key: 192.168.1.104,63636,32839649749148
+
